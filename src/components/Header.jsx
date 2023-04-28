@@ -26,22 +26,20 @@ const Header = () => {
             justifyContent:'space-between',
             alignContent:'center',
             width: '50%'}}>
-                <Grid id='logo'>
+                <Box id='logo' sx={{display: 'flex', flexDirection: 'row', justifyContent: 'center', alignContent:'center', alignItems:'center'}}>
                     <Box
                     src={logo}
                     sx={{
                         display: 'flex',
                         flexDirection: 'row',
                         alignContent: 'center',
-                        height: '200px',
-                        width: '200px',
-                        mb: 2,
+                        height: '250px',
+                        width: '250px',
                         mt: 10,
-                        ml: '38%' //fix this
                     }}
                     component='img'
                     ></Box>
-                </Grid>
+                </Box>
             <Box sx={{
             display:'flex',
             flexDirection:'column',
@@ -55,13 +53,15 @@ const Header = () => {
                     letterSpacing: '.1 rem',
                     color: 'white',
                     textDecoration: 'none',
-                    mt: 10
+                    mt: 5,
+                    mb: 5
                 }}
                 >
                 kaptn
                 </Typography>
                 <Typography
                 variant='h6'
+                align='center'
                 sx={{
                     fontFamily: 'Roboto',
                     fontWeight: 50,
@@ -70,7 +70,6 @@ const Header = () => {
                     textDecoration: 'none',
                     mt: 1,
                     mb: 20,
-                    alignContent: 'center'
                 }}
                 >
                 Kaptn is an educational open-source tool that unlocks the full power of kubernetes command line kubectl, and helps ease the learning curve of setting up and monitoring Kubernetes clusters
