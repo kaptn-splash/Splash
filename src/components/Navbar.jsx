@@ -20,7 +20,7 @@ export default function Navbar() {
         <Toolbar>
           <Button color="inherit">Features</Button>
           <Button color="inherit">Meet the Team</Button>
-          <Button color="inherit">Github</Button>
+          <Button color="inherit" href='https://github.com/oslabs-beta/kaptn' target='_blank'>Github</Button>
           <Button color="inherit">Download</Button>
         </Toolbar>
       </AppBar>
