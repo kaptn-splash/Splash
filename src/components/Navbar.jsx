@@ -5,11 +5,13 @@ import Toolbar from '@mui/material/Toolbar';
 import { Grid } from '@mui/material';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
+import Features from './Features';
+import Team from './Team';
 
 export default function Navbar() {
   return (
     <Grid
-        id='nav-bar'>
+    id='nav-bar'>
     <Box>
       <AppBar style={{ 
         background: '#22145a',
