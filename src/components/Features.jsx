@@ -14,7 +14,7 @@ import {Button} from '@mui/material';
 const Features = () => {
   return (
     <Grid id='features'>
-        <Box id='feature1' sx={{display: 'flex', flexDirection: 'row-reverse', justifyContent: 'space-evenly', alignItems: 'flex-start', alignContent: 'center', mb: 40}}>
+        <Box id='feature1' sx={{display: 'flex', flexDirection: 'row-reverse', justifyContent: 'space-evenly', alignItems: 'flex-start', alignContent: 'center', mb: 20}}>
             <Box sx={{width: '45%', display: 'flex', flexDirection: 'column', justifyContent:'space-around', alignItems: 'flex-start'}}>
             <Typography
                 variant='h3'
@@ -61,7 +61,7 @@ const Features = () => {
             </Box>
             <Box src={dashboard} component='img' sx={{width: '40%', border: '1px', borderRadius: '2%',  boxShadow: '0px 0px 15px 15px rgb(255, 255, 255, 0.3)'}}></Box>
         </Box>
-        <Box id='feature2' sx={{display: 'flex', flexDirection: 'row', justifyContent: 'space-evenly', alignItems: 'flex-start', alignContent: 'center', mb: 40}}>
+        <Box id='feature2' sx={{display: 'flex', flexDirection: 'row', justifyContent: 'space-evenly', alignItems: 'flex-start', alignContent: 'center', mb: 20}}>
             <Box sx={{display: 'flex', flexDirection: 'column', justifyContent:'space-around', alignItems: 'flex-end'}}>
             <Typography
                 variant='h3'
