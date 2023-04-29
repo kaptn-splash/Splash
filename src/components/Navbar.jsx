@@ -20,10 +20,18 @@ export default function Navbar() {
         justifyContent:'flex-end'
     }}>
         <Toolbar>
-          <Button color="inherit">Features</Button>
-          <Button color="inherit">Meet the Team</Button>
-          <Button color="inherit" href='https://github.com/oslabs-beta/kaptn' target='_blank'>Github</Button>
-          <Button color="inherit">Download</Button>
+          <Button color="inherit" sx={{':hover': {
+              backgroundColor: 'rgb(142,228,95)',
+            }}}>Features</Button>
+          <Button color="inherit" sx={{':hover': {
+              backgroundColor: 'rgb(142,228,95)',
+            }}}>Meet the Team</Button>
+          <Button color="inherit" href='https://github.com/oslabs-beta/kaptn' target='_blank' sx={{':hover': {
+              backgroundColor: 'rgb(142,228,95)',
+            }}}>Github</Button>
+          <Button color="inherit" sx={{':hover': {
+              backgroundColor: 'rgb(142,228,95)',
+            }}}>Download</Button>
         </Toolbar>
       </AppBar>
     </Box>
