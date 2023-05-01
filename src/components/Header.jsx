@@ -1,6 +1,6 @@
 import React from 'react';
 import { Grid, Typography } from '@mui/material';
-import logo from '../kaptn.png';
+import logo from '../images/kaptn.png';
 import Box from '@mui/material/Box';
 
 
