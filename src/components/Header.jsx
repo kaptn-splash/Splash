@@ -40,7 +40,7 @@ const Header = () => {
                     component='img'
                     ></Box>
                 </Box>
-            <Box sx={{
+            <Box id='download' sx={{
             display:'flex',
             flexDirection:'column',
             justifyContent:'space-around',
@@ -79,7 +79,7 @@ const Header = () => {
                 align='center'
                 sx={{
                     fontFamily: 'Roboto',
-                    fontWeight: 20,
+                    fontWeight: 'bold',
                     letterSpacing: '.1 rem',
                     color: 'rgb(142,228,95)',
                     textDecoration: 'none',

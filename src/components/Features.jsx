@@ -2,12 +2,10 @@ import React from 'react'
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import { createTheme, ThemeProvider, styled } from '@mui/material/styles';
-import dashboard from '../images/dashboard1.png'
-import setup from '../images/dashboard.png'
-import { shadows } from '@mui/system';
-import { borders } from '@mui/system';
+import dashboard from '../images/dashboard1.png';
+import setup from '../images/dashboard.png';
+import metrics from '../images/metrics.png';
 import { Typography } from '@mui/material';
-import {Button} from '@mui/material';
 import mac from '../images/mac.png';
 import microsoft from '../images/microsoft.png';
 
@@ -27,7 +25,7 @@ const Features = () => {
                 variant='h3'
                 sx={{
                     fontFamily: 'Roboto',
-                    fontWeight: 50,
+                    fontWeight: '100',
                     letterSpacing: '.1 rem',
                     color: 'white',
                     textDecoration: 'none',
@@ -114,7 +112,7 @@ const Features = () => {
             <Box src={setup} component='img' sx={{width: '40%', border: '1px', borderRadius: '2%', boxShadow: '0px 0px 15px 15px rgb(255, 255, 255, 0.3)', ':hover': { width: '43%', boxShadow: '0px 0px 15px 15px rgb(142, 228, 95, 0.3)'}}}></Box>
         </Box>
         <Box id='feature3' sx={{display: 'flex', flexDirection: 'row-reverse', justifyContent: 'space-evenly', alignItems: 'flex-start', alignContent: 'center', mb: 20}}>
-            <Box sx={{display: 'flex', flexDirection: 'column', justifyContent:'space-around', alignItems: 'flex-start'}}>
+            <Box sx={{width: '45%', display: 'flex', flexDirection: 'column', justifyContent:'space-around', alignItems: 'flex-start'}}>
             <Typography
                 variant='h3'
                 sx={{
@@ -140,7 +138,7 @@ const Features = () => {
                     alignContent: 'center'
                 }}
                 >                       
-                Kubernetes API server metrics
+                Easily sync your kaptn workspace to Grafana and Prometheus to allow for clear and real-time visualization of your clusters' health
                 </Typography>
                 <Typography
                 variant='h6'
@@ -154,10 +152,10 @@ const Features = () => {
                     alignContent: 'center'
                 }}
                 >                       
-                More coming soon...
+                Utilize our quick set up if you are not already connected, and consider kaptn your only stop for working with and monitoring your kubernetes clusters
                 </Typography>
             </Box>
-            <Box src={setup} component='img' sx={{width: '40%', border: '1px', borderRadius: '2%', boxShadow: '0px 0px 15px 15px rgb(255, 255, 255, 0.3)', ':hover': { width: '43%', boxShadow: '0px 0px 15px 15px rgb(142, 228, 95, 0.3)'}}}></Box>
+            <Box src={metrics} component='img' sx={{width: '40%', border: '1px', borderRadius: '2%', boxShadow: '0px 0px 15px 15px rgb(255, 255, 255, 0.3)', ':hover': { width: '43%', boxShadow: '0px 0px 15px 15px rgb(142, 228, 95, 0.3)'}}}></Box>
         </Box>
     </Grid>
 );
