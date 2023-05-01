@@ -33,8 +33,8 @@ const Header = () => {
                         display: 'flex',
                         flexDirection: 'row',
                         alignContent: 'center',
-                        height: '250px',
-                        width: '250px',
+                        height: '300px',
+                        width: '300px',
                         mt: 10,
                     }}
                     component='img'
@@ -50,9 +50,9 @@ const Header = () => {
                 sx={{
                     fontFamily: 'Roboto',
                     fontSize: 100,
-                    fontWeight: 50,
+                    fontWeight: 'normal',
                     letterSpacing: '.1 rem',
-                    color: 'white',
+                    color: '#f5f5f5',
                     textDecoration: 'none',
                     mb: 2
                 }}
@@ -60,19 +60,19 @@ const Header = () => {
                 kaptn
                 </Typography>
                 <Typography
-                variant='h5'
+                variant='h4'
                 align='center'
                 sx={{
                     fontFamily: 'Roboto',
                     fontWeight: 50,
                     letterSpacing: '.1 rem',
-                    color: 'white',
+                    color: '#f5f5f5',
                     textDecoration: 'none',
                     mt: 1,
                     mb: 2,
                 }}
                 >
-                Kaptn is an educational open-source tool that unlocks the full power of kubernetes command line kubectl, and helps ease the learning curve of setting up and monitoring Kubernetes clusters
+                Unlock the full power of kubernetes command line kubectl, while easily initializing and monitoring kubernetes clusters
                 </Typography>
                 <Typography
                 variant='h4'
