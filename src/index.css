@@ -1,3 +1,9 @@
+html{
+  margin:0;
+  padding:0;
+  max-height:100vh;
+}
+
 body {
     top: 0px;
     right: 0px;
@@ -6,7 +12,6 @@ body {
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
-    height: '100%'
   }
 
   #link:hover {
@@ -15,4 +20,8 @@ body {
 
   #buttons:hover {
     cursor: pointer;
+  }
+
+  #App {
+    height: '100%'
   }
