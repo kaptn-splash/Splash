@@ -390,7 +390,7 @@ const Header = () => {
                 mb: 2,
               }}
             >
-              Unlock the full power of kubernetes command line kubectl, while
+              Unlock the full power of the kubernetes command kubectl, while
               easily initializing and monitoring kubernetes clusters
             </Typography>
             <Typography
