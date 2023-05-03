@@ -6,7 +6,7 @@ $base-hue: 260; // change for diff colors (180 is nice)
 
 html {
   // height: 100%;
-  padding-top: 100px;
+  padding-top: 110px;
 }
 
 body {
@@ -30,8 +30,8 @@ body {
     #36218a 51%,
     #400a58 100%
   );
-  -webkit-animation: AnimateBG 5s ease infinite;
-  animation: AnimateBG 5s ease infinite;
+  -webkit-animation: AnimateBG 10s ease infinite;
+  animation: AnimateBG 10s ease infinite;
 }
 
 @-webkit-keyframes AnimateBG {

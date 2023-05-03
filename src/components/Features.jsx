@@ -2,8 +2,8 @@ import React from 'react';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import { createTheme, ThemeProvider, styled } from '@mui/material/styles';
-import dashboard from '../images/dashboard1.png';
-import setup from '../images/dashboard.png';
+import dashboard from '../images/dashboardnew.jpg';
+import setup from '../images/setuppage.jpg';
 import metrics from '../images/metrics.png';
 import { Typography } from '@mui/material';
 import mac from '../images/mac.png';
@@ -19,7 +19,7 @@ const Features = () => {
             flexDirection: 'row',
             justifyContent: 'center',
             width: '100%',
-            mb: 20,
+            mb: 10,
           }}
         >
           <Box
@@ -46,7 +46,7 @@ const Features = () => {
                 'https://github.com/oslabs-beta/kaptn/releases/download/V1.0.0/kaptn-1.0.0-win-arm64.exe'
               )
             }
-            sx={{ width: '90px', height: '90px' }}
+            sx={{ width: '90px', height: '90px', paddingTop: '5px' }}
           ></Box>
         </Box>
       </Box>
@@ -58,7 +58,7 @@ const Features = () => {
           justifyContent: 'space-evenly',
           alignItems: 'flex-start',
           alignContent: 'center',
-          mb: 20,
+          mb: 0,
         }}
       >
         <Box
@@ -122,10 +122,10 @@ const Features = () => {
             width: '40%',
             border: '1px',
             borderRadius: '2%',
-            boxShadow: '0px 0px 15px 15px rgb(255, 255, 255, 0.3)',
+            boxShadow: '0px 0px 5px 5px rgb(0, 0, 0, 0.1)',
             ':hover': {
               width: '43%',
-              boxShadow: '0px 0px 15px 15px rgb(142, 228, 95, 0.3)',
+              boxShadow: '0px 0px 17px 17px rgb(184, 34, 190, 0.5)',
             },
           }}
         ></Box>
@@ -202,10 +202,10 @@ const Features = () => {
             width: '40%',
             border: '1px',
             borderRadius: '2%',
-            boxShadow: '0px 0px 15px 15px rgb(255, 255, 255, 0.3)',
+            boxShadow: '0px 0px 5px 5px rgb(0, 0, 0, 0.1)',
             ':hover': {
               width: '43%',
-              boxShadow: '0px 0px 15px 15px rgb(142, 228, 95, 0.3)',
+              boxShadow: '0px 0px 17px 17px rgb(184, 34, 190, 0.5)',
             },
           }}
         ></Box>
@@ -282,10 +282,10 @@ const Features = () => {
             width: '40%',
             border: '1px',
             borderRadius: '2%',
-            boxShadow: '0px 0px 15px 15px rgb(255, 255, 255, 0.3)',
+            boxShadow: '0px 0px 5px 5px rgb(0, 0, 0, 0.1)',
             ':hover': {
               width: '43%',
-              boxShadow: '0px 0px 15px 15px rgb(142, 228, 95, 0.3)',
+              boxShadow: '0px 0px 17px 17px rgb(184, 34, 190, 0.5)',
             },
           }}
         ></Box>
