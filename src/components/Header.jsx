@@ -308,7 +308,6 @@ const Header = () => {
         <div class='c'></div>
         <div class='c'></div>
       </div>
-
       <Box
         disableEqualOverflow='true'
         style={{
@@ -319,7 +318,7 @@ const Header = () => {
           alignContent: 'center',
           width: '100%',
           height: '100%',
-          mt: 100,
+          mt: 50,
         }}
       >
         <Grid
@@ -338,7 +337,6 @@ const Header = () => {
                         alignContent: 'center',
                         height: '300px',
                         width: '300px',
-                        mt: 10,
                     }}
                     component='img'
                     ></Box>

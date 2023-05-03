@@ -16,9 +16,9 @@ body {
   left: 0px;
   margin: 0px;
   padding: 0px;
-  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: auto;
   width: 100%;
-  /* height: 100vh; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -112,4 +112,16 @@ body {
         rotateZ($z); // translateX * 3
     }
   }
+}
+
+#link:hover {
+  cursor: pointer;
+}
+
+#buttons:hover {
+  cursor: pointer;
+}
+
+.App {
+  height: 100%;
 }

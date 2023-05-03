@@ -12,8 +12,7 @@ root.render(
       display: 'flex',
       flexDirection: 'column',
       justifyContent: 'space-between',
-      alignContent: 'center',
-      mb: 40,
+      alignContent: 'center'
     }}
   >
     <React.StrictMode>
