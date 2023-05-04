@@ -90,7 +90,7 @@ const Team = () => {
               id='link'
               component='img'
               onClick={() => {
-                window.open('https://www.github.com/brechtsky');
+                window.open('https://www.github.com/brecht-horn');
               }}
               style={styles.icons}
               src={githubPng}
