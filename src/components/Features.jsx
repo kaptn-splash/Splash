@@ -42,7 +42,7 @@ const Features = () => {
             src={microsoft}
             onClick={() =>
               window.open(
-                'https://github.com/oslabs-beta/kaptn/releases/download/V1.0.0/kaptn-1.0.0-win-arm64.exe'
+                'https://github.com/oslabs-beta/kaptn/releases/download/V1.0.0/Kaptn-1.0.0-mac.dmg'
               )
             }
             sx={{ width: '90px', height: '90px', paddingTop: '5px' }}
