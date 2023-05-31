@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.cc638894.css",
+    "main.js": "/static/js/main.8cfbddc9.js",
+    "static/media/natalie.png": "/static/media/natalie.d10828dc993923d89b01.png",
+    "static/media/john.png": "/static/media/john.5cfb169c2ad2268c465b.png",
+    "static/media/yining.png": "/static/media/yining.0d681fab042fb1405e3b.png",
+    "static/media/olivia.png": "/static/media/olivia.303a5bdd86f32cb1e829.png",
+    "static/media/brecht.png": "/static/media/brecht.f83cbfe3e01a890e0c53.png",
+    "static/media/metrics.png": "/static/media/metrics.ba14c3aa9b9a188a7045.png",
+    "static/media/kaptn_Logo_2.png": "/static/media/kaptn_Logo_2.1b0d3215fa03bf4340fc.png",
+    "static/media/dashboardnew.jpg": "/static/media/dashboardnew.a2f6e3596af7f34c4040.jpg",
+    "static/media/setuppage.jpg": "/static/media/setuppage.7175720065e4e723fc10.jpg",
+    "index.html": "/index.html",
+    "main.cc638894.css.map": "/static/css/main.cc638894.css.map",
+    "main.8cfbddc9.js.map": "/static/js/main.8cfbddc9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cc638894.css",
+    "static/js/main.8cfbddc9.js"
+  ]
+}

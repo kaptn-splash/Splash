@@ -23,22 +23,23 @@ const Features = () => {
           }}
         >
           <Box
-            id='buttons'
+            id='buttonsDL'
             component='img'
             src={mac}
             onClick={() =>
               window.open(
-                'https://github.com/oslabs-beta/kaptn/releases/download/V1.0.0/Kaptn-1.0.0-mac-arm64.dmg'
+                'https://github.com/oslabs-beta/kaptn/releases/download/V1.0.0/Kaptn-1.0.0-mac.dmg'
               )
             }
             sx={{
               width: '90px',
               height: '90px',
+              zIndex: '130',
               ':hover': 'pointer',
             }}
           ></Box>
           <Box
-            id='buttons'
+            id='buttonsDL'
             component='img'
             src={microsoft}
             onClick={() =>
@@ -46,7 +47,12 @@ const Features = () => {
                 'https://github.com/oslabs-beta/kaptn/releases/download/V1.0.0/kaptn-1.0.0-win-arm64.exe'
               )
             }
-            sx={{ width: '90px', height: '90px', paddingTop: '5px' }}
+            sx={{
+              width: '90px',
+              height: '90px',
+              paddingTop: '5px',
+              zIndex: '130',
+            }}
           ></Box>
         </Box>
       </Box>
@@ -59,6 +65,8 @@ const Features = () => {
           alignItems: 'flex-start',
           alignContent: 'center',
           mb: 0,
+          zIndex: '130',
+          // bgcolor: 'red',
         }}
       >
         <Box
@@ -68,6 +76,8 @@ const Features = () => {
             flexDirection: 'column',
             justifyContent: 'space-around',
             alignItems: 'flex-start',
+            zIndex: '130',
+            // bgcolor: 'blue',
           }}
         >
           <Typography
@@ -78,6 +88,8 @@ const Features = () => {
               letterSpacing: '.1 rem',
               color: 'white',
               textDecoration: 'none',
+              zIndex: '130',
+              textShadow: '1px 1px 5px rgb(0, 0, 0, 0.3)',
             }}
           >
             User-friendly terminal interface
@@ -93,6 +105,7 @@ const Features = () => {
               mt: 10,
               mb: 5,
               alignContent: 'center',
+              textShadow: '1px 1px 5px rgb(0, 0, 0, 0.3)',
             }}
           >
             Take command of the command line interface with our pre-cofigured
@@ -109,6 +122,8 @@ const Features = () => {
               mt: 1,
               mb: 20,
               alignContent: 'center',
+              zIndex: '130',
+              textShadow: '1px 1px 5px rgb(0, 0, 0, 0.3)',
             }}
           >
             Clearly visualize your commands within our interactive terminal, and
@@ -120,8 +135,10 @@ const Features = () => {
           component='img'
           sx={{
             width: '40%',
+            zIndex: '130',
             border: '1px',
             borderRadius: '2%',
+            bgcolor: 'black',
             boxShadow: '0px 0px 5px 5px rgb(0, 0, 0, 0.1)',
             ':hover': {
               width: '43%',
@@ -139,6 +156,7 @@ const Features = () => {
           alignItems: 'flex-start',
           alignContent: 'center',
           mb: 20,
+          zIndex: '130',
         }}
       >
         <Box
@@ -148,6 +166,7 @@ const Features = () => {
             flexDirection: 'column',
             justifyContent: 'space-around',
             alignItems: 'flex-end',
+            zIndex: '130',
           }}
         >
           <Typography
@@ -158,6 +177,8 @@ const Features = () => {
               letterSpacing: '.1 rem',
               color: 'white',
               textDecoration: 'none',
+              zIndex: '130',
+              textShadow: '1px 1px 5px rgb(0, 0, 0, 0.3)',
             }}
           >
             Quick Kubernetes Setup
@@ -173,6 +194,8 @@ const Features = () => {
               mt: 10,
               mb: 5,
               alignContent: 'center',
+              zIndex: '130',
+              textShadow: '1px 1px 5px rgb(0, 0, 0, 0.3)',
             }}
           >
             Kickstart your project by creating your own docker image or
@@ -188,6 +211,8 @@ const Features = () => {
               textDecoration: 'none',
               mt: 1,
               alignContent: 'center',
+              zIndex: '130',
+              textShadow: '1px 1px 5px rgb(0, 0, 0, 0.3)',
             }}
           >
             Generate a custom YAML file personalized to your projects' needs
@@ -200,6 +225,7 @@ const Features = () => {
           component='img'
           sx={{
             width: '40%',
+            zIndex: '130',
             border: '1px',
             borderRadius: '2%',
             boxShadow: '0px 0px 5px 5px rgb(0, 0, 0, 0.1)',
@@ -219,6 +245,7 @@ const Features = () => {
           alignItems: 'flex-start',
           alignContent: 'center',
           mb: 20,
+          zIndex: '130',
         }}
       >
         <Box
@@ -228,6 +255,7 @@ const Features = () => {
             flexDirection: 'column',
             justifyContent: 'space-around',
             alignItems: 'flex-start',
+            zIndex: '130',
           }}
         >
           <Typography
@@ -238,6 +266,8 @@ const Features = () => {
               letterSpacing: '.1 rem',
               color: 'white',
               textDecoration: 'none',
+              zIndex: '130',
+              textShadow: '1px 1px 5px rgb(0, 0, 0, 0.3)',
             }}
           >
             Cluster metrics visualization
@@ -253,6 +283,8 @@ const Features = () => {
               mt: 10,
               mb: 5,
               alignContent: 'center',
+              zIndex: '130',
+              textShadow: '1px 1px 5px rgb(0, 0, 0, 0.3)',
             }}
           >
             Easily sync your kaptn workspace to Grafana and Prometheus to allow
@@ -268,6 +300,8 @@ const Features = () => {
               textDecoration: 'none',
               mt: 1,
               alignContent: 'center',
+              zIndex: '130',
+              textShadow: '1px 1px 5px rgb(0, 0, 0, 0.3)',
             }}
           >
             Utilize our quick set up if you are not already connected, and
@@ -280,6 +314,7 @@ const Features = () => {
           component='img'
           sx={{
             width: '40%',
+            zIndex: '130',
             border: '1px',
             borderRadius: '2%',
             boxShadow: '0px 0px 5px 5px rgb(0, 0, 0, 0.1)',
