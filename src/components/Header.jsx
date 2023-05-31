@@ -6,310 +6,8 @@ import Box from '@mui/material/Box';
 const Header = () => {
   return (
     <Grid id='header'>
-      <div class='wrap'>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-        <div class='c'></div>
-      </div>
       <Box
-        disableEqualOverflow='true'
+        // disableEqualOverflow='true'
         style={{
           // backgroundColor: '#120838',
           display: 'flex',
@@ -348,6 +46,7 @@ const Header = () => {
                 alignContent: 'center',
                 height: '400px',
                 width: '400px',
+                zIndex: '130',
               }}
               component='img'
             ></Box>
@@ -372,6 +71,7 @@ const Header = () => {
                 color: '#f5f5f5',
                 textDecoration: 'none',
                 mb: 3,
+                zIndex: '130',
               }}
             >
               kaptn
@@ -388,6 +88,8 @@ const Header = () => {
                 textDecoration: 'none',
                 mt: 1,
                 mb: 2,
+                zIndex: '130',
+                textShadow: '1px 1px 5px rgb(0, 0, 0, 0.3)',
               }}
             >
               Unlock the full power of the kubernetes command kubectl, while
@@ -397,14 +99,15 @@ const Header = () => {
               variant='h4'
               align='center'
               sx={{
-                fontFamily: 'Roboto',
-                fontWeight: 'bold',
-                fontSize: '25px',
+                fontFamily: 'Outfit',
+                fontSize: '24px',
                 letterSpacing: '.1 rem',
-                color: 'rgb(142,228,95)',
+                color: '#f965f1',
                 textDecoration: 'none',
                 mt: 1,
                 mb: 2,
+                zIndex: '130',
+                textShadow: '1px 1px 5px rgb(0, 0, 0, 0.3)',
               }}
             >
               Download Now
