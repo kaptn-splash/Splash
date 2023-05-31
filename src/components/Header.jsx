@@ -92,7 +92,7 @@ const Header = () => {
                 textShadow: '1px 1px 5px rgb(0, 0, 0, 0.3)',
               }}
             >
-              Unlock the full power of kubernetes command line kubectl, while
+              Unlock the full power of the kubernetes command kubectl, while
               easily initializing and monitoring kubernetes clusters
             </Typography>
             <Typography
