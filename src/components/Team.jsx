@@ -70,7 +70,7 @@ const Team = () => {
               variant='h5'
               color='whitesmoke'
               mb='5px'
-              textShadow='1px 1px 5px rgb(0, 0, 0, 0.3)'
+              // textShadow='1px 1px 5px rgb(0, 0, 0, 0.3)'
             >
               Brecht Horn
             </Typography>
@@ -79,7 +79,7 @@ const Team = () => {
               fontWeight='lighter'
               color='whitesmoke'
               mb='15px'
-              textShadow='1px 1px 5px rgb(0, 0, 0, 0.3)'
+              // textShadow='1px 1px 5px rgb(0, 0, 0, 0.3)'
             >
               Software Engineer
             </Typography>
@@ -124,7 +124,7 @@ const Team = () => {
               variant='h5'
               color='whitesmoke'
               mb='15px'
-              textShadow='1px 1px 5px rgb(0, 0, 0, 0.3)'
+              // textShadow='1px 1px 5px rgb(0, 0, 0, 0.3)'
             >
               Hwi Won (John) Choi
             </Typography>
@@ -133,24 +133,15 @@ const Team = () => {
               fontWeight='lighter'
               color='whitesmoke'
               mb='15px'
-              textShadow='1px 1px 5px rgb(0, 0, 0, 0.3)'
+              // textShadow='1px 1px 5px rgb(0, 0, 0, 0.3)'
             >
               Software Engineer
             </Typography>
             <Box
- style={{
+              style={{
                 display: 'flex',
                 flexDirection: 'row',
                 justifyContent: 'center',
-              }}
-            >
-              <Box
-                id='link'
-                component='img'
-                onClick={() => {
-                  window.open(
-                    'https://www.linkedin.com/in/hwi-won-choi-057081191/'
-                  );
               }}
             >
               <Box
@@ -185,7 +176,7 @@ const Team = () => {
               variant='h5'
               color='whitesmoke'
               mb='15px'
-              textShadow='1px 1px 5px rgb(0, 0, 0, 0.3)'
+              // textShadow='1px 1px 5px rgb(0, 0, 0, 0.3)'
             >
               Natalie Cordoves
             </Typography>
@@ -194,7 +185,7 @@ const Team = () => {
               fontWeight='lighter'
               color='whitesmoke'
               mb='15px'
-              textShadow='1px 1px 5px rgb(0, 0, 0, 0.3)'
+              // textShadow='1px 1px 5px rgb(0, 0, 0, 0.3)'
             >
               Software Engineer
             </Typography>
@@ -235,7 +226,7 @@ const Team = () => {
               variant='h5'
               color='whitesmoke'
               mb='15px'
-              textShadow='1px 1px 5px rgb(0, 0, 0, 0.3)'
+              // textShadow='1px 1px 5px rgb(0, 0, 0, 0.3)'
             >
               Olivia Hodel
             </Typography>
@@ -244,7 +235,7 @@ const Team = () => {
               fontWeight='lighter'
               color='whitesmoke'
               mb='15px'
-              textShadow='1px 1px 5px rgb(0, 0, 0, 0.3)'
+              // textShadow='1px 1px 5px rgb(0, 0, 0, 0.3)'
             >
               Software Engineer
             </Typography>
@@ -285,7 +276,7 @@ const Team = () => {
               variant='h5'
               color='whitesmoke'
               mb='15px'
-              textShadow='1px 1px 5px rgb(0, 0, 0, 0.3)'
+              // textShadow='1px 1px 5px rgb(0, 0, 0, 0.3)'
             >
               Yining Wang
             </Typography>
@@ -294,7 +285,7 @@ const Team = () => {
               fontWeight='lighter'
               color='whitesmoke'
               mb='15px'
-              textShadow='1px 1px 5px rgb(0, 0, 0, 0.3)'
+              // textShadow='1px 1px 5px rgb(0, 0, 0, 0.3)'
             >
               Software Engineer
             </Typography>
