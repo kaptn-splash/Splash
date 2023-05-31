@@ -138,10 +138,19 @@ const Team = () => {
               Software Engineer
             </Typography>
             <Box
-              style={{
+ style={{
                 display: 'flex',
                 flexDirection: 'row',
                 justifyContent: 'center',
+              }}
+            >
+              <Box
+                id='link'
+                component='img'
+                onClick={() => {
+                  window.open(
+                    'https://www.linkedin.com/in/hwi-won-choi-057081191/'
+                  );
               }}
             >
               <Box
