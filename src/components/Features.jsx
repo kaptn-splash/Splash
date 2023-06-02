@@ -7,6 +7,7 @@ import metrics from '../images/metrics.png';
 import { Typography } from '@mui/material';
 import mac from '../images/mac.png';
 import microsoft from '../images/microsoft.png';
+import Tilt from 'react-parallax-tilt';
 
 const Features = () => {
   return (
@@ -18,7 +19,7 @@ const Features = () => {
             flexDirection: 'row',
             justifyContent: 'center',
             width: '100%',
-            mb: 10,
+            mb: 4,
           }}
         >
           <Box
@@ -55,274 +56,340 @@ const Features = () => {
           ></Box>
         </Box>
       </Box>
+      <Typography
+        variant='h2'
+        textAlign='center'
+        sx={{
+          fontFamily: 'outfit',
+          fontSize: 30,
+          fontWeight: 800,
+          letterSpacing: '1px',
+          color: 'white',
+          textDecoration: 'none',
+          mt: 0,
+          mb: 15,
+          zIndex: '130',
+          textShadow: '1px 1px 5px rgb(0, 0, 0, 0.4)',
+        }}
+      >
+        FEATURING:
+      </Typography>
+
       <Box
         id='feature1'
-        sx={{
+        style={{
           display: 'flex',
           flexDirection: 'row-reverse',
           justifyContent: 'space-evenly',
           alignItems: 'flex-start',
           alignContent: 'center',
-          mb: 0,
+          marginBottom: 0,
+          marginTop: '100',
           zIndex: '130',
           // bgcolor: 'red',
         }}
       >
         <Box
           sx={{
-            width: '45%',
+            width: '100%',
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'space-around',
-            alignItems: 'flex-start',
+            alignItems: 'center',
             zIndex: '130',
+            marginRight: '5%',
+
+            marginTop: '4.5%',
             // bgcolor: 'blue',
           }}
         >
           <Typography
-            variant='h3'
+            className='titles'
+            variant='h4'
             sx={{
-              fontFamily: 'Roboto',
-              fontWeight: '100',
-              letterSpacing: '.1 rem',
+              fontFamily: 'outfit',
+              fontWeight: '800',
+              fontSize: '2vw',
+              letterSpacing: '1px',
               color: 'white',
               textDecoration: 'none',
+
+              textAlign: 'center',
               zIndex: '130',
-              textShadow: '1px 1px 5px rgb(0, 0, 0, 0.3)',
+              textShadow: '1px 1px 5px rgb(0, 0, 0, 0.4)',
             }}
           >
-            User-friendly terminal interface
+            USER-FRIENDLY TERMINAL INTERFACE
           </Typography>
           <Typography
-            variant='h6'
+            className='blurbs'
+            variant='h5'
             sx={{
               fontFamily: 'Roboto',
               fontWeight: 50,
+              fontSize: '1.5vw',
               letterSpacing: '.1 rem',
               color: 'white',
               textDecoration: 'none',
-              mt: 10,
-              mb: 5,
+              mt: 3,
+              mb: 15,
               alignContent: 'center',
+
+              textAlign: 'center',
               textShadow: '1px 1px 5px rgb(0, 0, 0, 0.3)',
             }}
           >
-            Take command of the command line interface with our pre-cofigured
+            Take command of the command line interface with our pre-configured
             kubectl options, or free type commands into our CLI
-          </Typography>
-          <Typography
-            variant='h6'
-            sx={{
-              fontFamily: 'Roboto',
-              fontWeight: 50,
-              letterSpacing: '.1 rem',
-              color: 'white',
-              textDecoration: 'none',
-              mt: 1,
-              mb: 20,
-              alignContent: 'center',
-              zIndex: '130',
-              textShadow: '1px 1px 5px rgb(0, 0, 0, 0.3)',
-            }}
-          >
+            <br />
+            <br />
             Clearly visualize your commands within our interactive terminal, and
-            take advantage of the increased readability
+            take advantage of the improved readability
           </Typography>
         </Box>
-        <Box
-          src={dashboard}
-          component='img'
-          sx={{
-            width: '40%',
-            zIndex: '130',
-            border: '1px',
-            borderRadius: '2%',
-            bgcolor: 'black',
-            boxShadow: '0px 0px 5px 5px rgb(0, 0, 0, 0.1)',
-            ':hover': {
-              width: '43%',
-              boxShadow: '0px 0px 17px 17px rgb(184, 34, 190, 0.5)',
-            },
+        <Tilt
+          // tiltAngleYInitial='90'
+          tiltMaxAngleX='5'
+          tiltMaxAngleY='5'
+          tiltReverse='true'
+          style={{
+            marginLeft: '05%',
+            alignItems: 'center',
+            justifyContent: 'center',
+            zIndex: '13',
           }}
-        ></Box>
+        >
+          <Box
+            src={dashboard}
+            component='img'
+            className='image'
+            sx={{
+              width: '90%',
+              mb: 6,
+              alignItems: 'center',
+              justifyContent: 'center',
+              zIndex: '1301',
+              border: '1px',
+              borderRadius: '2%',
+              bgcolor: 'black',
+              boxShadow: '0px 0px 5px 5px rgb(0, 0, 0, 0.1)',
+              ':hover': {
+                boxShadow: '0px 0px 17px 17px rgb(184, 34, 190, 0.5)',
+              },
+            }}
+          ></Box>
+        </Tilt>
       </Box>
       <Box
         id='feature2'
-        sx={{
+        style={{
           display: 'flex',
           flexDirection: 'row',
           justifyContent: 'space-evenly',
-          alignItems: 'flex-start',
+          alignItems: 'center',
           alignContent: 'center',
-          mb: 20,
+          marginBottom: 0,
+          marginTop: '140px',
           zIndex: '130',
         }}
       >
         <Box
           sx={{
-            width: '45%',
+            width: '100%',
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'space-around',
-            alignItems: 'flex-end',
+            alignItems: 'center',
+            alignText: 'center',
             zIndex: '130',
+            marginLeft: '3%',
+            marginTop: '4.2%',
+            // bgcolor: 'blue',
           }}
         >
           <Typography
-            variant='h3'
+            className='titles2'
+            variant='h4'
             sx={{
-              fontFamily: 'Roboto',
-              fontWeight: 50,
-              letterSpacing: '.1 rem',
+              fontFamily: 'outfit',
+              fontWeight: '800',
+              fontSize: '2vw',
+              letterSpacing: '1px',
               color: 'white',
               textDecoration: 'none',
+              textAlign: 'center',
+              alignItems: 'center',
               zIndex: '130',
-              textShadow: '1px 1px 5px rgb(0, 0, 0, 0.3)',
+              textShadow: '1px 1px 5px rgb(0, 0, 0, 0.4)',
             }}
           >
-            Quick Kubernetes Setup
+            QUICK KUBERNETES SETUP
           </Typography>
           <Typography
-            variant='h6'
+            className='blurbs2'
+            variant='h5'
             sx={{
               fontFamily: 'Roboto',
               fontWeight: 50,
+              fontSize: '1.5vw',
               letterSpacing: '.1 rem',
               color: 'white',
               textDecoration: 'none',
-              mt: 10,
-              mb: 5,
+              mt: 3,
+              mb: 15,
+              pr: 2,
               alignContent: 'center',
-              zIndex: '130',
+              textAlign: 'center',
               textShadow: '1px 1px 5px rgb(0, 0, 0, 0.3)',
             }}
           >
             Kickstart your project by creating your own docker image or
             uploading an image using our easy setup configuration
-          </Typography>
-          <Typography
-            variant='h6'
-            sx={{
-              fontFamily: 'Roboto',
-              fontWeight: 50,
-              letterSpacing: '.1 rem',
-              color: 'white',
-              textDecoration: 'none',
-              mt: 1,
-              alignContent: 'center',
-              zIndex: '130',
-              textShadow: '1px 1px 5px rgb(0, 0, 0, 0.3)',
-            }}
-          >
+            <br />
+            <br />
             Generate a custom YAML file personalized to your projects' needs
             using a pre-configured template, allowing you to shorten tedious
             setup time and start working with your clusters
           </Typography>
         </Box>
-        <Box
-          src={setup}
-          component='img'
-          sx={{
-            width: '40%',
-            zIndex: '130',
-            border: '1px',
-            borderRadius: '2%',
-            boxShadow: '0px 0px 5px 5px rgb(0, 0, 0, 0.1)',
-            ':hover': {
-              width: '43%',
-              boxShadow: '0px 0px 17px 17px rgb(184, 34, 190, 0.5)',
-            },
+        <Tilt
+          tiltMaxAngleX='5'
+          tiltMaxAngleY='5'
+          tiltReverse='true'
+          style={{
+            marginRight: '2%',
+            marginLeft: '3.5%',
+            alignItems: 'center',
+            justifyContent: 'center',
+            zIndex: '13',
           }}
-        ></Box>
+        >
+          <Box
+            src={setup}
+            component='img'
+            className='image2'
+            sx={{
+              width: '95%',
+              mb: 6,
+              alignItems: 'center',
+              justifyContent: 'center',
+              zIndex: '1301',
+              border: '1px',
+              borderRadius: '2%',
+              bgcolor: 'black',
+              boxShadow: '0px 0px 5px 5px rgb(0, 0, 0, 0.1)',
+              ':hover': {
+                boxShadow: '0px 0px 17px 17px rgb(184, 34, 190, 0.5)',
+              },
+            }}
+          ></Box>
+        </Tilt>
       </Box>
       <Box
         id='feature3'
-        sx={{
+        style={{
           display: 'flex',
           flexDirection: 'row-reverse',
           justifyContent: 'space-evenly',
           alignItems: 'flex-start',
           alignContent: 'center',
-          mb: 20,
+          marginBottom: 40,
+          marginTop: '100px',
           zIndex: '130',
+          // bgcolor: 'red',
         }}
       >
         <Box
           sx={{
-            width: '45%',
+            width: '100%',
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'space-around',
-            alignItems: 'flex-start',
+            alignItems: 'center',
             zIndex: '130',
+            marginRight: '5%',
+
+            marginTop: '6%',
+            // bgcolor: 'blue',
           }}
         >
           <Typography
-            variant='h3'
+            className='titles3'
+            variant='h4'
             sx={{
-              fontFamily: 'Roboto',
-              fontWeight: 50,
-              letterSpacing: '.1 rem',
+              fontFamily: 'outfit',
+              fontWeight: '800',
+              fontSize: '2vw',
+              letterSpacing: '1px',
               color: 'white',
               textDecoration: 'none',
+              alignItems: 'center',
+              textAlign: 'center',
               zIndex: '130',
-              textShadow: '1px 1px 5px rgb(0, 0, 0, 0.3)',
+              textShadow: '1px 1px 5px rgb(0, 0, 0, 0.4)',
             }}
           >
-            Cluster metrics visualization
+            CLUSTER METRICS VISUALIZATION
           </Typography>
           <Typography
-            variant='h6'
+            className='blurbs'
+            variant='h5'
             sx={{
               fontFamily: 'Roboto',
               fontWeight: 50,
+              fontSize: '1.5vw',
               letterSpacing: '.1 rem',
               color: 'white',
               textDecoration: 'none',
-              mt: 10,
-              mb: 5,
+              mt: 3,
+              mb: 15,
               alignContent: 'center',
-              zIndex: '130',
+
+              textAlign: 'center',
               textShadow: '1px 1px 5px rgb(0, 0, 0, 0.3)',
             }}
           >
             Easily sync your kaptn workspace to Grafana and Prometheus to allow
             for clear and real-time visualization of your clusters' health
-          </Typography>
-          <Typography
-            variant='h6'
-            sx={{
-              fontFamily: 'Roboto',
-              fontWeight: 50,
-              letterSpacing: '.1 rem',
-              color: 'white',
-              textDecoration: 'none',
-              mt: 1,
-              alignContent: 'center',
-              zIndex: '130',
-              textShadow: '1px 1px 5px rgb(0, 0, 0, 0.3)',
-            }}
-          >
+            <br />
+            <br />
             Utilize our quick set up if you are not already connected, and
             consider kaptn your only stop for working with and monitoring your
             kubernetes clusters
           </Typography>
         </Box>
-        <Box
-          src={metrics}
-          component='img'
-          sx={{
-            width: '40%',
-            zIndex: '130',
-            border: '1px',
-            borderRadius: '2%',
-            boxShadow: '0px 0px 5px 5px rgb(0, 0, 0, 0.1)',
-            ':hover': {
-              width: '43%',
-              boxShadow: '0px 0px 17px 17px rgb(184, 34, 190, 0.5)',
-            },
+        <Tilt
+          tiltMaxAngleX='5'
+          tiltMaxAngleY='5'
+          tiltReverse='true'
+          transitionSpeed='800'
+          style={{
+            marginLeft: '2.5%',
+            alignItems: 'center',
+            justifyContent: 'center',
+            zIndex: '13',
           }}
-        ></Box>
+        >
+          <Box
+            src={metrics}
+            component='img'
+            className='image3'
+            sx={{
+              width: '90%',
+              mb: 6,
+              alignItems: 'center',
+              justifyContent: 'center',
+              zIndex: '1301',
+              border: '1px',
+              borderRadius: '2%',
+              bgcolor: 'black',
+              boxShadow: '0px 0px 5px 5px rgb(0, 0, 0, 0.1)',
+              ':hover': {
+                boxShadow: '0px 0px 17px 17px rgb(184, 34, 190, 0.5)',
+              },
+            }}
+          ></Box>
+        </Tilt>
       </Box>
     </Grid>
   );

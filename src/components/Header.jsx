@@ -25,7 +25,7 @@ const Header = () => {
             flexDirection: 'column',
             justifyContent: 'space-between',
             alignContent: 'center',
-            width: '50%',
+            width: '65%',
           }}
         >
           <Box
@@ -44,8 +44,8 @@ const Header = () => {
                 display: 'flex',
                 flexDirection: 'row',
                 alignContent: 'center',
-                height: '400px',
-                width: '400px',
+                height: '350px',
+                width: '350px',
                 zIndex: '130',
               }}
               component='img'
@@ -82,7 +82,7 @@ const Header = () => {
               sx={{
                 fontFamily: 'Roboto',
                 fontWeight: 50,
-                fontSize: '25px',
+                fontSize: '1.8rem',
                 letterSpacing: '.1 rem',
                 color: '#f5f5f5',
                 textDecoration: 'none',
@@ -105,7 +105,7 @@ const Header = () => {
                 color: '#f965f1',
                 textDecoration: 'none',
                 mt: 1,
-                mb: 2,
+                mb: 1,
                 zIndex: '130',
                 textShadow: '1px 1px 5px rgb(0, 0, 0, 0.3)',
               }}

@@ -18,7 +18,7 @@ root.render(
     <React.StrictMode>
       <link
         rel='stylesheet'
-        href='https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&family=Red+Hat+Display:wght@600;700&family=Righteous&family=Roboto:wght@300;400;500;700&display=swap'
+        href='https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&family=Red+Hat+Display:wght@600;700&family=Righteous&family=Roboto:wght@300;400;500;700&family=Oswald:wght@200;300;400;500;600;700&display=swap'
       />
       <App />
     </React.StrictMode>
