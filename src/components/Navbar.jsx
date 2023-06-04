@@ -36,6 +36,7 @@ export default function Navbar() {
             <Button
               color='inherit'
               onClick={scrollFeat}
+              style={{ marginRight: '20px', fontSize: '18px' }}
               sx={{
                 ':hover': {
                   backgroundColor: '#3f2999',
@@ -48,6 +49,7 @@ export default function Navbar() {
             <Button
               color='inherit'
               onClick={scrollTeam}
+              style={{ marginRight: '20px', fontSize: '18px' }}
               sx={{
                 ':hover': {
                   backgroundColor: '#3f2999',
@@ -61,6 +63,7 @@ export default function Navbar() {
               color='inherit'
               href='https://github.com/oslabs-beta/kaptn'
               target='_blank'
+              style={{ marginRight: '20px', fontSize: '18px' }}
               sx={{
                 ':hover': {
                   backgroundColor: '#3f2999',
@@ -73,6 +76,7 @@ export default function Navbar() {
             <Button
               color='inherit'
               onClick={scrollDownload}
+              style={{ fontSize: '18px' }}
               sx={{
                 ':hover': {
                   backgroundColor: '#3f2999',

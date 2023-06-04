@@ -15,10 +15,10 @@ function App() {
 
   return (
     <div className='App'>
-      <Navbar style={{ zIndex: '1301' }} />
+      <Navbar style={{ zIndex: '1601' }} />
       <Header style={{ zIndex: '1201' }} />
       <Features style={{ zIndex: '1200' }} />
-      <Team style={{ zIndex: '1201' }} />
+      <Team style={{ zIndex: '1401' }} />
       <Particles
         id='tsparticles'
         init={particlesInit}

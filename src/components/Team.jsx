@@ -16,33 +16,36 @@ const styles = {
     height: '30px',
     marginLeft: '10px',
     marginRight: '10px',
-    zIndex: '130',
+    zIndex: '1310',
   },
 };
 
 const Team = () => {
   return (
-    <div style={{ zIndex: '1301' }}>
+    <div style={{ zIndex: '140' }}>
       <Grid
         id='TeamBio'
         justifyContent='center'
         alignItems='center'
-        zIndex='1301'
+        style={{ zIndex: '1301' }}
       >
         <Typography
           variant='h2'
           textAlign='center'
+          style={{
+            zIndex: '1301',
+          }}
           sx={{
-            fontFamily: 'Roboto',
-            fontSize: 50,
-            fontWeight: 50,
-            letterSpacing: '.1 rem',
+            fontFamily: 'outfit',
+            fontSize: '5vw',
+            fontWeight: 600,
+            letterSpacing: '1px',
             color: 'white',
             textDecoration: 'none',
-            mt: 5,
-            mb: 5,
-            zIndex: '130',
-            textShadow: '1px 1px 5px rgb(0, 0, 0, 0.3)',
+            mt: 10,
+            mb: 9,
+            zIndex: '1301',
+            textShadow: '1px 1px 5px rgb(0, 0, 0, 0.5)',
           }}
         >
           Meet Our Engineering Team
@@ -51,6 +54,7 @@ const Team = () => {
           id='members'
           justifyContent='center'
           alignContent='center'
+          style={{ zIndex: '1301' }}
           sx={{
             display: 'flex',
             flexDirection: 'row',
