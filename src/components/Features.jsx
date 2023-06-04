@@ -11,8 +11,185 @@ import Tilt from 'react-parallax-tilt';
 import { browserName, browserVersion } from 'react-device-detect';
 
 const Features = () => {
-  let tiltValue = '5';
-  if (browserName === 'Mobile Safari') tiltValue = '0';
+  let tiltValue = '10';
+  let dashboardImg;
+  let setupImg;
+  let metricsImg;
+  if (browserName !== 'Mobile Safari') {
+    dashboardImg = (
+      <Tilt
+        // tiltAngleYInitial='90'
+        tiltEnable='true'
+        tiltMaxAngleX={tiltValue}
+        tiltMaxAngleY={tiltValue}
+        tiltReverse='true'
+        style={{
+          marginLeft: '05%',
+          alignItems: 'center',
+          justifyContent: 'center',
+          zIndex: '13',
+        }}
+      >
+        <Box
+          src={dashboard}
+          component='img'
+          className='image'
+          sx={{
+            width: '90%',
+            mb: 6,
+            alignItems: 'center',
+            justifyContent: 'center',
+            zIndex: '1301',
+            border: '1px',
+            borderRadius: '2%',
+            bgcolor: 'black',
+            boxShadow: '0px 0px 5px 5px rgb(0, 0, 0, 0.1)',
+            ':hover': {
+              boxShadow: '0px 0px 17px 17px rgb(184, 34, 190, 0.5)',
+            },
+          }}
+        ></Box>
+      </Tilt>
+    );
+    setupImg = (
+      <Tilt
+        tiltMaxAngleX={tiltValue}
+        tiltMaxAngleY={tiltValue}
+        tiltReverse='true'
+        style={{
+          marginRight: '2%',
+          marginLeft: '3.5%',
+          alignItems: 'center',
+          justifyContent: 'center',
+          zIndex: '13',
+        }}
+      >
+        <Box
+          src={setup}
+          component='img'
+          className='image2'
+          sx={{
+            width: '95%',
+            mb: 6,
+            alignItems: 'center',
+            justifyContent: 'center',
+            zIndex: '1301',
+            border: '1px',
+            borderRadius: '2%',
+            bgcolor: 'black',
+            boxShadow: '0px 0px 5px 5px rgb(0, 0, 0, 0.1)',
+            ':hover': {
+              boxShadow: '0px 0px 17px 17px rgb(184, 34, 190, 0.5)',
+            },
+          }}
+        ></Box>
+      </Tilt>
+    );
+    metricsImg = (
+      <Tilt
+        tiltMaxAngleX={tiltValue}
+        tiltMaxAngleY={tiltValue}
+        tiltReverse='true'
+        transitionSpeed='800'
+        style={{
+          marginLeft: '2.5%',
+          alignItems: 'center',
+          justifyContent: 'center',
+          zIndex: '13',
+        }}
+      >
+        <Box
+          src={metrics}
+          component='img'
+          className='image3'
+          sx={{
+            width: '90%',
+            mb: 6,
+            alignItems: 'center',
+            justifyContent: 'center',
+            zIndex: '1301',
+            border: '1px',
+            borderRadius: '2%',
+            bgcolor: 'black',
+            boxShadow: '0px 0px 5px 5px rgb(0, 0, 0, 0.1)',
+            ':hover': {
+              boxShadow: '0px 0px 17px 17px rgb(184, 34, 190, 0.5)',
+            },
+          }}
+        ></Box>
+      </Tilt>
+    );
+  } else {
+    dashboardImg = (
+      <Box
+        src={dashboard}
+        component='img'
+        className='image'
+        style={{
+          width: '50%',
+          marginBottom: 6,
+          marginLeft: '05%',
+          marginRight: '5%',
+          alignItems: 'center',
+          justifyContent: 'center',
+          zIndex: '101',
+          border: '1px',
+          borderRadius: '2%',
+          bgcolor: 'black',
+          boxShadow: '0px 0px 5px 5px rgb(0, 0, 0, 0.1)',
+          ':hover': {
+            boxShadow: '0px 0px 17px 17px rgb(184, 34, 190, 0.5)',
+          },
+        }}
+      ></Box>
+    );
+    setupImg = (
+      <Box
+        src={setup}
+        component='img'
+        className='image2'
+        sx={{
+          width: '55%',
+          mb: 6,
+          ml: '5%',
+          mr: '5%',
+          alignItems: 'center',
+          justifyContent: 'center',
+          zIndex: '101',
+          border: '1px',
+          borderRadius: '2%',
+          bgcolor: 'black',
+          boxShadow: '0px 0px 5px 5px rgb(0, 0, 0, 0.1)',
+          ':hover': {
+            boxShadow: '0px 0px 17px 17px rgb(184, 34, 190, 0.5)',
+          },
+        }}
+      ></Box>
+    );
+    metricsImg = (
+      <Box
+        src={metrics}
+        component='img'
+        className='image3'
+        sx={{
+          width: '55%',
+          mb: 6,
+          ml: '5%',
+          mr: '5%',
+          alignItems: 'center',
+          justifyContent: 'center',
+          zIndex: '101',
+          border: '1px',
+          borderRadius: '2%',
+          bgcolor: 'black',
+          boxShadow: '0px 0px 5px 5px rgb(0, 0, 0, 0.1)',
+          ':hover': {
+            boxShadow: '0px 0px 17px 17px rgb(184, 34, 190, 0.5)',
+          },
+        }}
+      ></Box>
+    );
+  }
 
   console.log('browserName is', browserName);
 
@@ -154,39 +331,7 @@ const Features = () => {
             take advantage of the improved readability
           </Typography>
         </Box>
-        <Tilt
-          // tiltAngleYInitial='90'
-          tiltEnable='true'
-          tiltMaxAngleX={tiltValue}
-          tiltMaxAngleY={tiltValue}
-          tiltReverse='true'
-          style={{
-            marginLeft: '05%',
-            alignItems: 'center',
-            justifyContent: 'center',
-            zIndex: '13',
-          }}
-        >
-          <Box
-            src={dashboard}
-            component='img'
-            className='image'
-            sx={{
-              width: '90%',
-              mb: 6,
-              alignItems: 'center',
-              justifyContent: 'center',
-              zIndex: '1301',
-              border: '1px',
-              borderRadius: '2%',
-              bgcolor: 'black',
-              boxShadow: '0px 0px 5px 5px rgb(0, 0, 0, 0.1)',
-              ':hover': {
-                boxShadow: '0px 0px 17px 17px rgb(184, 34, 190, 0.5)',
-              },
-            }}
-          ></Box>
-        </Tilt>
+        {dashboardImg}
       </Box>
       <Box
         id='feature2'
@@ -260,38 +405,7 @@ const Features = () => {
             setup time and start working with your clusters
           </Typography>
         </Box>
-        <Tilt
-          tiltMaxAngleX={tiltValue}
-          tiltMaxAngleY={tiltValue}
-          tiltReverse='true'
-          style={{
-            marginRight: '2%',
-            marginLeft: '3.5%',
-            alignItems: 'center',
-            justifyContent: 'center',
-            zIndex: '13',
-          }}
-        >
-          <Box
-            src={setup}
-            component='img'
-            className='image2'
-            sx={{
-              width: '95%',
-              mb: 6,
-              alignItems: 'center',
-              justifyContent: 'center',
-              zIndex: '1301',
-              border: '1px',
-              borderRadius: '2%',
-              bgcolor: 'black',
-              boxShadow: '0px 0px 5px 5px rgb(0, 0, 0, 0.1)',
-              ':hover': {
-                boxShadow: '0px 0px 17px 17px rgb(184, 34, 190, 0.5)',
-              },
-            }}
-          ></Box>
-        </Tilt>
+        {setupImg}
       </Box>
       <Box
         id='feature3'
@@ -366,38 +480,7 @@ const Features = () => {
             kubernetes clusters
           </Typography>
         </Box>
-        <Tilt
-          tiltMaxAngleX={tiltValue}
-          tiltMaxAngleY={tiltValue}
-          tiltReverse='true'
-          transitionSpeed='800'
-          style={{
-            marginLeft: '2.5%',
-            alignItems: 'center',
-            justifyContent: 'center',
-            zIndex: '13',
-          }}
-        >
-          <Box
-            src={metrics}
-            component='img'
-            className='image3'
-            sx={{
-              width: '90%',
-              mb: 6,
-              alignItems: 'center',
-              justifyContent: 'center',
-              zIndex: '1301',
-              border: '1px',
-              borderRadius: '2%',
-              bgcolor: 'black',
-              boxShadow: '0px 0px 5px 5px rgb(0, 0, 0, 0.1)',
-              ':hover': {
-                boxShadow: '0px 0px 17px 17px rgb(184, 34, 190, 0.5)',
-              },
-            }}
-          ></Box>
-        </Tilt>
+        {metricsImg}
       </Box>
     </Grid>
   );
