@@ -8,8 +8,15 @@ import { Typography } from '@mui/material';
 import mac from '../images/mac.png';
 import microsoft from '../images/microsoft.png';
 import Tilt from 'react-parallax-tilt';
+import { browserName, browserVersion } from 'react-device-detect';
 
 const Features = () => {
+  let tiltValue = '5';
+  if (browserName === 'Mobile Safari') tiltValue = '0';
+
+  console.log('browserName is', browserName);
+
+  console.log('browserVersion is', browserVersion);
   return (
     <Grid id='features'>
       <Box id='button container' width='100%'>
@@ -149,8 +156,9 @@ const Features = () => {
         </Box>
         <Tilt
           // tiltAngleYInitial='90'
-          tiltMaxAngleX='5'
-          tiltMaxAngleY='5'
+          tiltEnable='true'
+          tiltMaxAngleX={tiltValue}
+          tiltMaxAngleY={tiltValue}
           tiltReverse='true'
           style={{
             marginLeft: '05%',
@@ -253,8 +261,8 @@ const Features = () => {
           </Typography>
         </Box>
         <Tilt
-          tiltMaxAngleX='5'
-          tiltMaxAngleY='5'
+          tiltMaxAngleX={tiltValue}
+          tiltMaxAngleY={tiltValue}
           tiltReverse='true'
           style={{
             marginRight: '2%',
@@ -359,8 +367,8 @@ const Features = () => {
           </Typography>
         </Box>
         <Tilt
-          tiltMaxAngleX='5'
-          tiltMaxAngleY='5'
+          tiltMaxAngleX={tiltValue}
+          tiltMaxAngleY={tiltValue}
           tiltReverse='true'
           transitionSpeed='800'
           style={{
