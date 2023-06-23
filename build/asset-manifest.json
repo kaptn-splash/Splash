@@ -1,22 +1,28 @@
 {
   "files": {
-    "main.css": "/static/css/main.e516f96c.css",
-    "main.js": "/static/js/main.e7cfe003.js",
+    "main.css": "/static/css/main.26c5c137.css",
+    "main.js": "/static/js/main.9b3ea377.js",
+    "static/media/helpdesk.gif": "/static/media/helpdesk.e192f335b20c907accf4.gif",
     "static/media/natalie.png": "/static/media/natalie.d10828dc993923d89b01.png",
     "static/media/john.png": "/static/media/john.5cfb169c2ad2268c465b.png",
     "static/media/yining.png": "/static/media/yining.0d681fab042fb1405e3b.png",
     "static/media/olivia.png": "/static/media/olivia.303a5bdd86f32cb1e829.png",
+    "static/media/lightmode.gif": "/static/media/lightmode.bfdb18b4acbd53e7173d.gif",
     "static/media/brecht.png": "/static/media/brecht.f83cbfe3e01a890e0c53.png",
-    "static/media/metrics.png": "/static/media/metrics.ba14c3aa9b9a188a7045.png",
-    "static/media/kaptn_Logo_2.png": "/static/media/kaptn_Logo_2.1b0d3215fa03bf4340fc.png",
-    "static/media/dashboardnew.jpg": "/static/media/dashboardnew.a2f6e3596af7f34c4040.jpg",
-    "static/media/setuppage.jpg": "/static/media/setuppage.7175720065e4e723fc10.jpg",
+    "static/media/MediumLogo.png": "/static/media/MediumLogo.07da6a402739de6fdbee.png",
+    "static/media/dashboardnew.jpg": "/static/media/dashboardnew.db05bd0c5692b3c51d9f.jpg",
+    "static/media/helpdesk.jpg": "/static/media/helpdesk.e94193a268a6da468fee.jpg",
+    "static/media/kaptn_Logo_2.png": "/static/media/kaptn_Logo_2.214efd7c059779c9ea72.png",
+    "static/media/setuppage.jpg": "/static/media/setuppage.50172786f569f18f346d.jpg",
+    "static/media/metrics.jpg": "/static/media/metrics.fb5a3a2ff10edc2e898c.jpg",
+    "static/media/lightmode.jpg": "/static/media/lightmode.c0fcba94bc6c8c02da6e.jpg",
+    "static/media/productHuntLogo.png": "/static/media/productHuntLogo.78a6a0e18f01e25d6cc7.png",
     "index.html": "/index.html",
-    "main.e516f96c.css.map": "/static/css/main.e516f96c.css.map",
-    "main.e7cfe003.js.map": "/static/js/main.e7cfe003.js.map"
+    "main.26c5c137.css.map": "/static/css/main.26c5c137.css.map",
+    "main.9b3ea377.js.map": "/static/js/main.9b3ea377.js.map"
   },
   "entrypoints": [
-    "static/css/main.e516f96c.css",
-    "static/js/main.e7cfe003.js"
+    "static/css/main.26c5c137.css",
+    "static/js/main.9b3ea377.js"
   ]
 }

@@ -12,7 +12,7 @@ import { Typography } from '@mui/material';
 import mac from '../images/mac.png';
 import microsoft from '../images/microsoft.png';
 import Tilt from 'react-parallax-tilt';
-import { browserName, browserVersion } from 'react-device-detect';
+import { browserName } from 'react-device-detect';
 
 const Features = () => {
   let tilt = true;
@@ -22,8 +22,8 @@ const Features = () => {
     helpdesk = helpdeskJPG;
     lightmode = lightmodeJPG;
   }
-  console.log('browserName is', browserName);
-  console.log('browserVersion is', browserVersion);
+  // console.log('browserName is', browserName);
+  // console.log('browserVersion is', browserVersion);
 
   let dashboardImg = (
     <Tilt
