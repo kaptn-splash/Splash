@@ -1,5 +1,4 @@
 import React from 'react';
-import Grid from '@mui/material/Grid';
 import { Typography } from '@mui/material';
 import Box from '@mui/material/Box';
 import linkedInPng from '../images/linkedin.png';
@@ -133,7 +132,7 @@ const Team = () => {
               ></Box>
             </Box>
           </Box>
-          <Box id="johnWidth" textAlign='center' width='500px'>
+          <Box id='johnWidth' textAlign='center' width='500px'>
             <Box
               component='img'
               src={john}
