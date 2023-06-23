@@ -1,5 +1,4 @@
 import React from 'react';
-import Grid from '@mui/material/Grid';
 import { Typography } from '@mui/material';
 import Box from '@mui/material/Box';
 import linkedInPng from '../images/linkedin.png';
@@ -12,39 +11,53 @@ import brecht from '../images/brecht.png';
 
 const styles = {
   icons: {
-    width: '30px',
-    height: '30px',
+    width: '40px',
+    height: '40px',
     marginLeft: '10px',
     marginRight: '10px',
+    marginBottom: '80px',
     zIndex: '1310',
   },
 };
 
 const Team = () => {
   return (
-    <div style={{ zIndex: '140' }}>
-      <Grid
+    <div
+      id='teamTopDiv'
+      style={{
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+        zIndex: '40000',
+      }}
+    >
+      <div
         id='TeamBio'
-        justifyContent='center'
-        alignItems='center'
-        style={{ zIndex: '1301' }}
+        style={{
+          zIndex: '14001',
+          // width: '800px',
+          // height:"auto",
+          flexWrap: 'wrap',
+          justifyContent: 'center',
+          alignItems: 'center',
+        }}
       >
         <Typography
           variant='h2'
           textAlign='center'
           style={{
-            zIndex: '1301',
+            zIndex: '13006',
           }}
           sx={{
             fontFamily: 'outfit',
-            fontSize: '5vw',
+            fontSize: '6.2vw',
             fontWeight: 600,
             letterSpacing: '1px',
             color: 'white',
             textDecoration: 'none',
             mt: 10,
             mb: 9,
-            zIndex: '1301',
             textShadow: '1px 1px 5px rgb(0, 0, 0, 0.5)',
           }}
         >
@@ -58,20 +71,21 @@ const Team = () => {
           sx={{
             display: 'flex',
             flexDirection: 'row',
-            justifyContent: 'space-around',
-            alignItems: 'center',
+            justifyContent: 'center',
+            flexWrap: 'wrap',
+            alignItems: 'flex-start',
             mb: 10,
             zIndex: '130',
           }}
         >
-          <Box textAlign='center'>
+          <Box textAlign='center' className='teammates' width='500px'>
             <Box
               component='img'
               src={brecht}
-              style={{ width: '150px', height: '150px', zIndex: '1300' }}
+              style={{ width: '250px', height: '250px', zIndex: '1300' }}
             ></Box>
             <Typography
-              variant='h5'
+              variant='h2'
               color='whitesmoke'
               mb='5px'
               // textShadow='1px 1px 5px rgb(0, 0, 0, 0.3)'
@@ -79,7 +93,7 @@ const Team = () => {
               Brecht Horn
             </Typography>
             <Typography
-              variant='h6'
+              variant='h5'
               fontWeight='lighter'
               color='whitesmoke'
               mb='15px'
@@ -118,14 +132,14 @@ const Team = () => {
               ></Box>
             </Box>
           </Box>
-          <Box textAlign='center'>
+          <Box id='johnWidth' textAlign='center' width='500px'>
             <Box
               component='img'
               src={john}
-              style={{ width: '150px', height: '150px', zIndex: '130' }}
+              style={{ width: '250px', height: '250px', zIndex: '130' }}
             ></Box>
             <Typography
-              variant='h5'
+              variant='h2'
               color='whitesmoke'
               mb='15px'
               // textShadow='1px 1px 5px rgb(0, 0, 0, 0.3)'
@@ -170,14 +184,14 @@ const Team = () => {
               ></Box>
             </Box>
           </Box>
-          <Box textAlign='center'>
+          <Box textAlign='center' width='500px'>
             <Box
               component='img'
               src={natalie}
-              style={{ width: '150px', height: '150px' }}
+              style={{ width: '250px', height: '250px' }}
             ></Box>
             <Typography
-              variant='h5'
+              variant='h2'
               color='whitesmoke'
               mb='15px'
               // textShadow='1px 1px 5px rgb(0, 0, 0, 0.3)'
@@ -185,7 +199,7 @@ const Team = () => {
               Natalie Cordoves
             </Typography>
             <Typography
-              variant='h6'
+              variant='h5'
               fontWeight='lighter'
               color='whitesmoke'
               mb='15px'
@@ -220,14 +234,14 @@ const Team = () => {
               ></Box>
             </Box>
           </Box>
-          <Box textAlign='center'>
+          <Box textAlign='center' width='500px'>
             <Box
               component='img'
               src={olivia}
-              style={{ width: '150px', height: '150px' }}
+              style={{ width: '250px', height: '250px' }}
             ></Box>
             <Typography
-              variant='h5'
+              variant='h2'
               color='whitesmoke'
               mb='15px'
               // textShadow='1px 1px 5px rgb(0, 0, 0, 0.3)'
@@ -235,7 +249,7 @@ const Team = () => {
               Olivia Hodel
             </Typography>
             <Typography
-              variant='h6'
+              variant='h5'
               fontWeight='lighter'
               color='whitesmoke'
               mb='15px'
@@ -270,14 +284,14 @@ const Team = () => {
               ></Box>
             </Box>
           </Box>
-          <Box textAlign='center'>
+          <Box textAlign='center' width='500px'>
             <Box
               component='img'
               src={yining}
-              style={{ width: '150px', height: '150px' }}
+              style={{ width: '250px', height: '250px' }}
             ></Box>
             <Typography
-              variant='h5'
+              variant='h2'
               color='whitesmoke'
               mb='15px'
               // textShadow='1px 1px 5px rgb(0, 0, 0, 0.3)'
@@ -285,7 +299,7 @@ const Team = () => {
               Yining Wang
             </Typography>
             <Typography
-              variant='h6'
+              variant='h5'
               fontWeight='lighter'
               color='whitesmoke'
               mb='15px'
@@ -323,7 +337,7 @@ const Team = () => {
             </Box>
           </Box>
         </Box>
-      </Grid>
+      </div>
     </div>
   );
 };
