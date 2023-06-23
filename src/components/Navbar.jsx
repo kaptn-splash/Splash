@@ -20,6 +20,11 @@ const scrollDownload = () => {
   section.scrollIntoView({ behavior: 'smooth', block: 'start' });
 };
 
+const scrollPress = () => {
+  const section = document.querySelector('#press');
+  section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+};
+
 export default function Navbar() {
   return (
     <Grid id='nav-bar'>
@@ -30,6 +35,7 @@ export default function Navbar() {
             display: 'flex',
             flexDirection: 'row',
             justifyContent: 'flex-end',
+            zIndex: '35000',
           }}
         >
           <Toolbar>
@@ -46,6 +52,21 @@ export default function Navbar() {
             >
               Features
             </Button>
+
+            <Button
+              color='inherit'
+              onClick={scrollPress}
+              style={{ marginRight: '20px', fontSize: '18px' }}
+              sx={{
+                ':hover': {
+                  backgroundColor: '#3f2999',
+                  color: '#ed35fe',
+                },
+              }}
+            >
+              Press
+            </Button>
+
             <Button
               color='inherit'
               onClick={scrollTeam}
@@ -57,7 +78,7 @@ export default function Navbar() {
                 },
               }}
             >
-              Meet the Team
+              Team
             </Button>
             <Button
               color='inherit'

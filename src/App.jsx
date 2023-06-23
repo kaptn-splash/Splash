@@ -2,6 +2,7 @@ import Features from './components/Features';
 import Header from './components/Header';
 import Navbar from './components/Navbar';
 import Team from './components/Team';
+import Press from './components/Press';
 import Particles from 'react-particles';
 import { useCallback } from 'react';
 import { loadFull } from 'tsparticles';
@@ -18,15 +19,16 @@ function App() {
       <Navbar sx={{ zIndex: '99999' }} />
       <Header style={{ zIndex: '1201' }} />
       <Features style={{ zIndex: '1200' }} />
+      <Press style={{ zIndex: '12602' }} />
       <Team style={{ zIndex: '1401' }} />
       <Particles
         id='tsparticles'
         init={particlesInit}
         loaded={particlesLoaded}
-        style={{ zIndex: '-100', position: 'fixed' }}
+        style={{ zIndex: '-150000', position: 'fixed' }}
         options={{
           background: {},
-          fpsLimit: 300,
+          fpsLimit: 120,
           interactivity: {
             events: {
               onClick: {
