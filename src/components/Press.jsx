@@ -36,7 +36,7 @@ const Press = () => {
             display: 'flex',
             flexDirection: 'row',
             justifyContent: 'center',
-            width: '100%',
+            width: '95%',
             mb: 20,
           }}
         >
@@ -50,7 +50,7 @@ const Press = () => {
               )
             }
             sx={{
-              width: '600px',
+              width: '45%',
               zIndex: '3410',
               mb: '60px',
               // bgcolor:'red',
@@ -66,7 +66,8 @@ const Press = () => {
               window.open('https://www.producthunt.com/products/kaptn')
             }
             sx={{
-              width: '600px',
+              width: '45%',
+              
               zIndex: '3410',
               mb: '60px',
               // bgcolor:'red',

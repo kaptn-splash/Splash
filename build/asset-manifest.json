@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.26c5c137.css",
-    "main.js": "/static/js/main.9b3ea377.js",
+    "main.css": "/static/css/main.7b1f5b43.css",
+    "main.js": "/static/js/main.c39b19cd.js",
     "static/media/helpdesk.gif": "/static/media/helpdesk.e192f335b20c907accf4.gif",
     "static/media/natalie.png": "/static/media/natalie.d10828dc993923d89b01.png",
     "static/media/john.png": "/static/media/john.5cfb169c2ad2268c465b.png",
@@ -10,6 +10,7 @@
     "static/media/lightmode.gif": "/static/media/lightmode.bfdb18b4acbd53e7173d.gif",
     "static/media/brecht.png": "/static/media/brecht.f83cbfe3e01a890e0c53.png",
     "static/media/MediumLogo.png": "/static/media/MediumLogo.07da6a402739de6fdbee.png",
+    "static/media/linux.png": "/static/media/linux.0c2a5fdb2af6c2cbb192.png",
     "static/media/dashboardnew.jpg": "/static/media/dashboardnew.db05bd0c5692b3c51d9f.jpg",
     "static/media/helpdesk.jpg": "/static/media/helpdesk.e94193a268a6da468fee.jpg",
     "static/media/kaptn_Logo_2.png": "/static/media/kaptn_Logo_2.214efd7c059779c9ea72.png",
@@ -18,11 +19,11 @@
     "static/media/lightmode.jpg": "/static/media/lightmode.c0fcba94bc6c8c02da6e.jpg",
     "static/media/productHuntLogo.png": "/static/media/productHuntLogo.78a6a0e18f01e25d6cc7.png",
     "index.html": "/index.html",
-    "main.26c5c137.css.map": "/static/css/main.26c5c137.css.map",
-    "main.9b3ea377.js.map": "/static/js/main.9b3ea377.js.map"
+    "main.7b1f5b43.css.map": "/static/css/main.7b1f5b43.css.map",
+    "main.c39b19cd.js.map": "/static/js/main.c39b19cd.js.map"
   },
   "entrypoints": [
-    "static/css/main.26c5c137.css",
-    "static/js/main.9b3ea377.js"
+    "static/css/main.7b1f5b43.css",
+    "static/js/main.c39b19cd.js"
   ]
 }

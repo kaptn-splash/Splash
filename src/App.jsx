@@ -15,7 +15,7 @@ function App() {
   const particlesLoaded = useCallback(async (container) => {}, []);
 
   return (
-    <div className='App'>
+    <div className='App' >
       <Navbar sx={{ zIndex: '99999' }} />
       <Header style={{ zIndex: '1201' }} />
       <Features style={{ zIndex: '1200' }} />
