@@ -11,6 +11,7 @@ import lightmodeJPG from '../images/lightmode.jpg';
 import { Typography } from '@mui/material';
 import mac from '../images/mac.png';
 import microsoft from '../images/microsoft.png';
+import linux from '../images/linux.png';
 import Tilt from 'react-parallax-tilt';
 import { browserName } from 'react-device-detect';
 
@@ -79,7 +80,7 @@ const Features = () => {
         component='img'
         className='image2'
         sx={{
-          width: '95%',
+          width: '94%',
           mb: 6,
           alignItems: 'center',
           justifyContent: 'center',
@@ -148,7 +149,7 @@ const Features = () => {
       <Box
         src={lightmode}
         component='img'
-        className='image2'
+        className='image5'
         sx={{
           width: '95%',
           mb: 6,
@@ -183,7 +184,7 @@ const Features = () => {
       <Box
         src={helpdesk}
         component='img'
-        className='image'
+        className='image4'
         sx={{
           width: '90%',
           mb: 6,
@@ -219,9 +220,7 @@ const Features = () => {
             component='img'
             src={mac}
             onClick={() =>
-              window.open(
-                'https://github.com/oslabs-beta/kaptn/releases/download/V1.0.0/Kaptn-1.0.0-mac.dmg'
-              )
+              window.open('https://github.com/oslabs-beta/kaptn/releases')
             }
             sx={{
               width: '90px',
@@ -235,15 +234,29 @@ const Features = () => {
             component='img'
             src={microsoft}
             onClick={() =>
-              window.open(
-                'https://github.com/oslabs-beta/kaptn/releases/download/V1.0.0/kaptn-1.0.0-win-arm64.exe'
-              )
+              window.open('https://github.com/oslabs-beta/kaptn/releases')
             }
             sx={{
               width: '90px',
               height: '90px',
               paddingTop: '5px',
               zIndex: '130',
+            }}
+          ></Box>
+          <Box
+            id='buttonsDL2'
+            component='img'
+            src={linux}
+            onClick={() =>
+              window.open('https://github.com/oslabs-beta/kaptn/releases')
+            }
+            sx={{
+              width: '85px',
+              height: '80px',
+              zIndex: '130',
+              paddingTop: '8.5px',
+              alignContent: 'center',
+              ':hover': 'pointer',
             }}
           ></Box>
         </Box>
@@ -266,378 +279,383 @@ const Features = () => {
       >
         FEATURING:
       </Typography>
-
-      <Box
-        id='feature1'
-        style={{
-          display: 'flex',
-          flexDirection: 'row-reverse',
-          justifyContent: 'space-evenly',
-          alignItems: 'flex-start',
-          alignContent: 'center',
-          marginBottom: 0,
-          marginTop: '100',
-          zIndex: '130',
-          // bgcolor: 'red',
-        }}
-      >
+      <div id="featuresDiv" style={{marginLeft:"15px"}}>
         <Box
-          sx={{
-            width: '100%',
+          id='feature1'
+          style={{
             display: 'flex',
-            flexDirection: 'column',
-            justifyContent: 'space-around',
-            alignItems: 'center',
+            flexDirection: 'row-reverse',
+            justifyContent: 'space-evenly',
+            alignItems: 'flex-start',
+            alignContent: 'center',
+            marginBottom: 0,
+            marginTop: '100',
             zIndex: '130',
-            marginRight: '5%',
-
-            marginTop: '4.5%',
-            // bgcolor: 'blue',
+            // bgcolor: 'red',
           }}
         >
-          <Typography
-            className='titles'
-            variant='h4'
+          <Box
             sx={{
-              fontFamily: 'outfit',
-              fontWeight: '800',
-              fontSize: '2vw',
-              letterSpacing: '1px',
-              color: 'white',
-              textDecoration: 'none',
-
-              textAlign: 'center',
-              zIndex: '130',
-              textShadow: '1px 1px 5px rgb(0, 0, 0, 0.4)',
-            }}
-          >
-            USER-FRIENDLY TERMINAL INTERFACE
-          </Typography>
-          <Typography
-            className='blurbs'
-            variant='h5'
-            sx={{
-              fontFamily: 'Roboto',
-              fontWeight: 50,
-              fontSize: '1.5vw',
-              letterSpacing: '.1 rem',
-              color: 'white',
-              textDecoration: 'none',
-              mt: 3,
-              mb: 15,
-              alignContent: 'center',
-
-              textAlign: 'center',
-              textShadow: '1px 1px 5px rgb(0, 0, 0, 0.3)',
-            }}
-          >
-            Take command of the command line interface with our pre-configured
-            kubectl options, or free type commands into our CLI
-            <br />
-            <br />
-            Clearly visualize your commands within our interactive terminal, and
-            take advantage of the improved readability
-          </Typography>
-        </Box>
-        {dashboardImg}
-      </Box>
-      <Box
-        id='feature2'
-        style={{
-          display: 'flex',
-          flexDirection: 'row',
-          justifyContent: 'space-evenly',
-          alignItems: 'center',
-          alignContent: 'center',
-          marginBottom: 0,
-          marginTop: '100px',
-          zIndex: '130',
-        }}
-      >
-        <Box
-          sx={{
-            width: '100%',
-            display: 'flex',
-            flexDirection: 'column',
-            justifyContent: 'space-around',
-            alignItems: 'center',
-            alignText: 'center',
-            zIndex: '130',
-            marginLeft: '3%',
-            marginTop: '4.2%',
-            // bgcolor: 'blue',
-          }}
-        >
-          <Typography
-            className='titles2'
-            variant='h4'
-            sx={{
-              fontFamily: 'outfit',
-              fontWeight: '800',
-              fontSize: '2vw',
-              letterSpacing: '1px',
-              color: 'white',
-              textDecoration: 'none',
-              textAlign: 'center',
+              width: '100%',
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'space-around',
               alignItems: 'center',
               zIndex: '130',
-              textShadow: '1px 1px 5px rgb(0, 0, 0, 0.4)',
-            }}
-          >
-            QUICK KUBERNETES SETUP
-          </Typography>
-          <Typography
-            className='blurbs2'
-            variant='h5'
-            sx={{
-              fontFamily: 'Roboto',
-              fontWeight: 50,
-              fontSize: '1.5vw',
-              letterSpacing: '.1 rem',
-              color: 'white',
-              textDecoration: 'none',
-              mt: 3,
-              mb: 15,
-              pr: 2,
-              alignContent: 'center',
-              textAlign: 'center',
-              textShadow: '1px 1px 5px rgb(0, 0, 0, 0.3)',
-            }}
-          >
-            Kickstart your project by creating your own docker image or
-            uploading an image using our easy setup configuration
-            <br />
-            <br />
-            Generate a custom YAML file personalized to your projects' needs
-            using a pre-configured template, allowing you to shorten tedious
-            setup time and start working with your clusters
-          </Typography>
-        </Box>
-        {setupImg}
-      </Box>
-      <Box
-        id='feature3'
-        style={{
-          display: 'flex',
-          flexDirection: 'row-reverse',
-          justifyContent: 'space-evenly',
-          alignItems: 'flex-start',
-          alignContent: 'center',
-          marginBottom: 40,
-          marginTop: '100px',
-          zIndex: '130',
-          // bgcolor: 'red',
-        }}
-      >
-        <Box
-          sx={{
-            width: '100%',
-            display: 'flex',
-            flexDirection: 'column',
-            justifyContent: 'space-around',
-            alignItems: 'center',
-            zIndex: '130',
-            marginRight: '5%',
+              marginRight: '5%',
 
-            marginTop: '6%',
-            // bgcolor: 'blue',
+              marginTop: '4.5%',
+              // bgcolor: 'blue',
+            }}
+          >
+            <Typography
+              className='titles'
+              variant='h4'
+              sx={{
+                fontFamily: 'outfit',
+                fontWeight: '800',
+                fontSize: '2vw',
+                letterSpacing: '1px',
+                color: 'white',
+                textDecoration: 'none',
+
+                textAlign: 'center',
+                zIndex: '130',
+                textShadow: '1px 1px 5px rgb(0, 0, 0, 0.4)',
+              }}
+            >
+              USER-FRIENDLY TERMINAL INTERFACE
+            </Typography>
+            <Typography
+              className='blurbs'
+              variant='h5'
+              sx={{
+                fontFamily: 'Roboto',
+                fontWeight: 50,
+                fontSize: '1.5vw',
+                letterSpacing: '.1 rem',
+                color: 'white',
+                textDecoration: 'none',
+                mt: 3,
+                mb: 15,
+                alignContent: 'center',
+
+                textAlign: 'center',
+                textShadow: '1px 1px 5px rgb(0, 0, 0, 0.3)',
+              }}
+            >
+              Take command of the command line interface with our pre-configured
+              kubectl options, or free type commands into our CLI.
+              <br />
+              <br />
+              Clearly visualize your commands within our interactive terminal,
+              and take advantage of the improved readability.
+            </Typography>
+          </Box>
+          {dashboardImg}
+        </Box>
+        <Box
+          id='feature2'
+          style={{
+            display: 'flex',
+            flexDirection: 'row',
+            justifyContent: 'space-evenly',
+            alignItems: 'center',
+            alignContent: 'center',
+            marginBottom: 0,
+            marginTop: '100px',
+            zIndex: '130',
           }}
         >
-          <Typography
-            className='titles3'
-            variant='h4'
+          <Box
             sx={{
-              fontFamily: 'outfit',
-              fontWeight: '800',
-              fontSize: '2vw',
-              letterSpacing: '1px',
-              color: 'white',
-              textDecoration: 'none',
+              width: '100%',
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'space-around',
               alignItems: 'center',
-              textAlign: 'center',
+              alignText: 'center',
               zIndex: '130',
-              textShadow: '1px 1px 5px rgb(0, 0, 0, 0.4)',
+              marginLeft: '3%',
+              marginTop: '4.2%',
+              // bgcolor: 'blue',
             }}
           >
-            CLUSTER METRICS VISUALIZATION
-          </Typography>
-          <Typography
-            className='blurbs'
-            variant='h5'
-            sx={{
-              fontFamily: 'Roboto',
-              fontWeight: 50,
-              fontSize: '1.5vw',
-              letterSpacing: '.1 rem',
-              color: 'white',
-              textDecoration: 'none',
-              mt: 3,
-              mb: 15,
-              alignContent: 'center',
-
-              textAlign: 'center',
-              textShadow: '1px 1px 5px rgb(0, 0, 0, 0.3)',
-            }}
-          >
-            Easily sync your kaptn workspace to Grafana and Prometheus to allow
-            for clear and real-time visualization of your clusters' health
-            <br />
-            <br />
-            Utilize our quick set up if you are not already connected, and
-            consider kaptn your only stop for working with and monitoring your
-            kubernetes clusters
-          </Typography>
+            <Typography
+              className='titles2'
+              variant='h4'
+              sx={{
+                fontFamily: 'outfit',
+                fontWeight: '800',
+                fontSize: '2vw',
+                letterSpacing: '1px',
+                color: 'white',
+                textDecoration: 'none',
+                textAlign: 'center',
+                alignItems: 'center',
+                zIndex: '130',
+                textShadow: '1px 1px 5px rgb(0, 0, 0, 0.4)',
+              }}
+            >
+              QUICK KUBERNETES SETUP
+            </Typography>
+            <Typography
+              className='blurbs2'
+              variant='h5'
+              sx={{
+                fontFamily: 'Roboto',
+                fontWeight: 50,
+                fontSize: '1.5vw',
+                letterSpacing: '.1 rem',
+                color: 'white',
+                textDecoration: 'none',
+                mt: 3,
+                mb: 15,
+                pr: 2,
+                alignContent: 'center',
+                textAlign: 'center',
+                textShadow: '1px 1px 5px rgb(0, 0, 0, 0.3)',
+              }}
+            >
+              Kickstart your project by creating your own docker image or
+              uploading an image using our easy setup configuration.
+              <br />
+              <br />
+              Generate a custom YAML file personalized to your projects' needs
+              using a pre-configured template, allowing you to shorten tedious
+              setup time and start working with your clusters.
+            </Typography>
+          </Box>
+          {setupImg}
         </Box>
-        {metricsImg}
-      </Box>
-
-      <Box
-        id='feature4'
-        style={{
-          display: 'flex',
-          flexDirection: 'row',
-          justifyContent: 'space-evenly',
-          alignItems: 'center',
-          alignContent: 'center',
-          marginBottom: 0,
-          marginTop: '80px',
-          zIndex: '130',
-        }}
-      >
         <Box
-          sx={{
-            width: '100%',
+          id='feature3'
+          style={{
             display: 'flex',
-            flexDirection: 'column',
-            justifyContent: 'space-around',
-            alignItems: 'center',
-            alignText: 'center',
+            flexDirection: 'row-reverse',
+            justifyContent: 'space-evenly',
+            alignItems: 'flex-start',
+            alignContent: 'center',
+            marginBottom: 40,
+            marginTop: '100px',
             zIndex: '130',
-            marginLeft: '3%',
-            marginTop: '4.2%',
-            // bgcolor: 'blue',
+            // bgcolor: 'red',
           }}
         >
-          <Typography
-            className='titles2'
-            variant='h4'
+          <Box
             sx={{
-              fontFamily: 'outfit',
-              fontWeight: '800',
-              fontSize: '2vw',
-              letterSpacing: '1px',
-              color: 'white',
-              textDecoration: 'none',
-              textAlign: 'center',
+              width: '100%',
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'space-around',
               alignItems: 'center',
               zIndex: '130',
-              textShadow: '1px 1px 5px rgb(0, 0, 0, 0.4)',
+              marginRight: '5%',
+
+              marginTop: '6%',
+              // bgcolor: 'blue',
             }}
           >
-            INSTANT HELP DESK
-          </Typography>
-          <Typography
-            className='blurbs2'
-            variant='h5'
-            sx={{
-              fontFamily: 'Roboto',
-              fontWeight: 50,
-              fontSize: '1.5vw',
-              letterSpacing: '.1 rem',
-              color: 'white',
-              textDecoration: 'none',
-              mt: 3,
-              mb: 15,
-              pr: 2,
-              alignContent: 'center',
-              textAlign: 'center',
-              textShadow: '1px 1px 5px rgb(0, 0, 0, 0.3)',
-            }}
-          >
-            Get help information on demand and at the click of a button with our
-            instant help desk. Now you can get more info about any command or
-            type without leaving the command line, and losing the code you've
-            already written out.
-          </Typography>
+            <Typography
+              className='titles3'
+              variant='h4'
+              sx={{
+                fontFamily: 'outfit',
+                fontWeight: '800',
+                fontSize: '2vw',
+                letterSpacing: '1px',
+                color: 'white',
+                textDecoration: 'none',
+                alignItems: 'center',
+                textAlign: 'center',
+                zIndex: '130',
+                textShadow: '1px 1px 5px rgb(0, 0, 0, 0.4)',
+              }}
+            >
+              CLUSTER METRICS VISUALIZATION
+            </Typography>
+            <Typography
+              className='blurbs'
+              variant='h5'
+              sx={{
+                fontFamily: 'Roboto',
+                fontWeight: 50,
+                fontSize: '1.5vw',
+                letterSpacing: '.1 rem',
+                color: 'white',
+                textDecoration: 'none',
+                mt: 3,
+                mb: 15,
+                alignContent: 'center',
+
+                textAlign: 'center',
+                textShadow: '1px 1px 5px rgb(0, 0, 0, 0.3)',
+              }}
+            >
+              Easily sync your kaptn workspace to Grafana and Prometheus to
+              allow for clear and real-time visualization of your clusters'
+              health.
+              <br />
+              <br />
+              Utilize our quick set up if you are not already connected, and
+              consider kaptn your only stop for working with and monitoring your
+              kubernetes clusters.
+            </Typography>
+          </Box>
+          {metricsImg}
         </Box>
-        {helpdeskImg}
-      </Box>
 
-      <Box
-        id='feature5'
-        style={{
-          display: 'flex',
-          flexDirection: 'row-reverse',
-          justifyContent: 'space-evenly',
-          alignItems: 'flex-start',
-          alignContent: 'center',
-          marginBottom: 0,
-          marginTop: '100px',
-          zIndex: '130',
-          // bgcolor: 'red',
-        }}
-      >
         <Box
-          sx={{
-            width: '100%',
+          id='feature4'
+          style={{
             display: 'flex',
-            flexDirection: 'column',
-            justifyContent: 'space-around',
+            flexDirection: 'row',
+            justifyContent: 'space-evenly',
             alignItems: 'center',
+            alignContent: 'center',
+            marginBottom: 0,
+            marginTop: '80px',
             zIndex: '130',
-            marginRight: '5%',
-
-            marginTop: '6%',
-            // bgcolor: 'blue',
           }}
         >
-          <Typography
-            className='titles3'
-            variant='h4'
+          <Box
             sx={{
-              fontFamily: 'outfit',
-              fontWeight: '800',
-              fontSize: '2vw',
-              letterSpacing: '1px',
-              color: 'white',
-              textDecoration: 'none',
+              width: '100%',
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'space-around',
               alignItems: 'center',
-              textAlign: 'center',
+              alignText: 'center',
               zIndex: '130',
-              textShadow: '1px 1px 5px rgb(0, 0, 0, 0.4)',
+              marginLeft: '3%',
+              marginTop: '4.2%',
+              // bgcolor: 'blue',
             }}
           >
-            LIGHT MODE / DARK MODE
-          </Typography>
-          <Typography
-            className='blurbs'
-            variant='h5'
-            sx={{
-              fontFamily: 'Roboto',
-              fontWeight: 50,
-              fontSize: '1.5vw',
-              letterSpacing: '.1 rem',
-              color: 'white',
-              textDecoration: 'none',
-              mt: 3,
-              mb: 15,
-              alignContent: 'center',
-
-              textAlign: 'center',
-              textShadow: '1px 1px 5px rgb(0, 0, 0, 0.3)',
-            }}
-          >
-            Whether it's eye strain, or just personal preference, we know
-            engineers can be selective about their work environments.
-            <br />
-            <br />
-            So we created a Light/Dark mode that allows you to work with your
-            favorite color combination. Now you can focus on coding with no
-            disruptions to your workflow.
-          </Typography>
+            <Typography
+              className='titles2'
+              variant='h4'
+              sx={{
+                fontFamily: 'outfit',
+                fontWeight: '800',
+                fontSize: '2vw',
+                letterSpacing: '1px',
+                color: 'white',
+                textDecoration: 'none',
+                textAlign: 'center',
+                alignItems: 'center',
+                zIndex: '130',
+                textShadow: '1px 1px 5px rgb(0, 0, 0, 0.4)',
+              }}
+            >
+              HELP & LEARNING RESOURCES
+            </Typography>
+            <Typography
+              className='blurbs2'
+              variant='h5'
+              sx={{
+                fontFamily: 'Roboto',
+                fontWeight: 50,
+                fontSize: '1.5vw',
+                letterSpacing: '.1 rem',
+                color: 'white',
+                textDecoration: 'none',
+                mt: 3,
+                mb: 15,
+                pr: 2,
+                alignContent: 'center',
+                textAlign: 'center',
+                textShadow: '1px 1px 5px rgb(0, 0, 0, 0.3)',
+              }}
+            >
+              Kubernetes can be difficult to learn, let alone master. So we've
+              created special tools to aid those new to using the technology.
+              <br />
+              <br />
+              Now you can get help information about any command or type at the
+              click of a button with the Instant Help Desk, or you can follow
+              tutorials and master Kubernetes with the Learning Center.
+            </Typography>
+          </Box>
+          {helpdeskImg}
         </Box>
-        {lightmodeImg}
-      </Box>
+
+        <Box
+          id='feature5'
+          style={{
+            display: 'flex',
+            flexDirection: 'row-reverse',
+            justifyContent: 'space-evenly',
+            alignItems: 'flex-start',
+            alignContent: 'center',
+            marginBottom: 0,
+            marginTop: '100px',
+            zIndex: '130',
+            // bgcolor: 'red',
+          }}
+        >
+          <Box
+            sx={{
+              width: '100%',
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'space-around',
+              alignItems: 'center',
+              zIndex: '130',
+              marginRight: '5%',
+
+              marginTop: '6%',
+              // bgcolor: 'blue',
+            }}
+          >
+            <Typography
+              className='titles3'
+              variant='h4'
+              sx={{
+                fontFamily: 'outfit',
+                fontWeight: '800',
+                fontSize: '2vw',
+                letterSpacing: '1px',
+                color: 'white',
+                textDecoration: 'none',
+                alignItems: 'center',
+                textAlign: 'center',
+                zIndex: '130',
+                textShadow: '1px 1px 5px rgb(0, 0, 0, 0.4)',
+              }}
+            >
+              LIGHT MODE / DARK MODE
+            </Typography>
+            <Typography
+              className='blurbs'
+              variant='h5'
+              sx={{
+                fontFamily: 'Roboto',
+                fontWeight: 50,
+                fontSize: '1.5vw',
+                letterSpacing: '.1 rem',
+                color: 'white',
+                textDecoration: 'none',
+                mt: 3,
+                mb: 15,
+                alignContent: 'center',
+
+                textAlign: 'center',
+                textShadow: '1px 1px 5px rgb(0, 0, 0, 0.3)',
+              }}
+            >
+              Whether it's eye strain, or just personal preference, we know
+              engineers can be selective about their work environments.
+              <br />
+              <br />
+              So we created a Light/Dark mode that allows you to work with your
+              favorite color combination. Now you can focus on coding with no
+              distractions to your workflow.
+            </Typography>
+          </Box>
+          {lightmodeImg}
+        </Box>
+      </div>
     </Grid>
   );
 };

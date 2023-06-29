@@ -52,6 +52,10 @@ body {
   }
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 #link:hover {
   cursor: pointer;
 }
@@ -62,8 +66,10 @@ body {
 
 #buttonsDL:hover {
   cursor: pointer;
-  width: 100px;
-  height: 100px;
+}
+
+#buttonsDL2:hover {
+  cursor: pointer;
 }
 
 .App {
@@ -193,27 +199,40 @@ body {
   }
 
   .image {
-    margin-left: 2.5%;
-    width: 70%;
+    margin-left: 3%;
+    width: 88.5% !important;
   }
 
   .image2 {
-    // size: 90%;
-    margin-left: 2.5%;
+    width: 90% !important;
+    margin-left: 4%;
     // margin-right: 10%;
   }
 
   .image3 {
+    width: 86.9% !important;
+    margin-left: 5% !important;
+  }
+
+  .image4 {
+    width: 89% !important;
+    margin-left: 2.5%;
+    // margin-right: 10%;
+  }
+
+  .image5 {
+    width: 89.5% !important;
     margin-left: 4%;
+    // margin-right: 10%;
   }
 
   #pressimages {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: '100%';
-    margin-bottom: 15;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: '100%' !important;
+    margin-bottom: 15 !important;
     // margin-left: 20;
     // background-color: red;
   }
@@ -224,10 +243,26 @@ body {
     align-items: center;
     // width: 100%;
     flex-direction: column;
-    flex-wrap: 'wrap',
+    flex-wrap: 'wrap';
+  }
+
+  #MediumArticle {
+    width: 70%;
+  }
+
+  #ProductHuntArticle {
+    width: 70%;
+  }
+
+  #MediumArticle:hover {
+    cursor: pointer;
   }
 
   #johnWidth {
-    width: auto !important
+    width: auto !important;
+  }
+
+  #featuresDiv{
+    margin-left:0,
   }
 }
