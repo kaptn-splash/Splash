@@ -1,16 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.7b1f5b43.css",
-    "main.js": "/static/js/main.c39b19cd.js",
+    "main.css": "/static/css/main.fece695e.css",
+    "main.js": "/static/js/main.224f84dc.js",
     "static/media/helpdesk.gif": "/static/media/helpdesk.e192f335b20c907accf4.gif",
     "static/media/natalie.png": "/static/media/natalie.d10828dc993923d89b01.png",
     "static/media/john.png": "/static/media/john.5cfb169c2ad2268c465b.png",
     "static/media/yining.png": "/static/media/yining.0d681fab042fb1405e3b.png",
     "static/media/olivia.png": "/static/media/olivia.303a5bdd86f32cb1e829.png",
     "static/media/lightmode.gif": "/static/media/lightmode.bfdb18b4acbd53e7173d.gif",
+    "static/media/kraneGIF.gif": "/static/media/kraneGIF.3c6a12b0da99c387fb9e.gif",
     "static/media/brecht.png": "/static/media/brecht.f83cbfe3e01a890e0c53.png",
     "static/media/MediumLogo.png": "/static/media/MediumLogo.07da6a402739de6fdbee.png",
     "static/media/linux.png": "/static/media/linux.0c2a5fdb2af6c2cbb192.png",
+    "static/media/krane.jpg": "/static/media/krane.197fd98081434a89ac4d.jpg",
     "static/media/dashboardnew.jpg": "/static/media/dashboardnew.db05bd0c5692b3c51d9f.jpg",
     "static/media/helpdesk.jpg": "/static/media/helpdesk.e94193a268a6da468fee.jpg",
     "static/media/kaptn_Logo_2.png": "/static/media/kaptn_Logo_2.214efd7c059779c9ea72.png",
@@ -19,11 +21,11 @@
     "static/media/lightmode.jpg": "/static/media/lightmode.c0fcba94bc6c8c02da6e.jpg",
     "static/media/productHuntLogo.png": "/static/media/productHuntLogo.78a6a0e18f01e25d6cc7.png",
     "index.html": "/index.html",
-    "main.7b1f5b43.css.map": "/static/css/main.7b1f5b43.css.map",
-    "main.c39b19cd.js.map": "/static/js/main.c39b19cd.js.map"
+    "main.fece695e.css.map": "/static/css/main.fece695e.css.map",
+    "main.224f84dc.js.map": "/static/js/main.224f84dc.js.map"
   },
   "entrypoints": [
-    "static/css/main.7b1f5b43.css",
-    "static/js/main.c39b19cd.js"
+    "static/css/main.fece695e.css",
+    "static/js/main.224f84dc.js"
   ]
 }
