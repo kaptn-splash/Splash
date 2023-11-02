@@ -137,6 +137,19 @@ body::-webkit-scrollbar {
     margin-right: 0 !important;
   }
 
+  #feature6 {
+    display: flex;
+    flex-direction: column-reverse !important;
+    justify-content: space-evenly !important;
+    align-items: center !important;
+    align-content: center !important;
+    margin-bottom: 10 !important;
+    margin-top: 0 !important;
+    z-index: 130 !important;
+    margin-right: 0 !important;
+    font-size: 1.1vw !important;
+  }
+
   .titles {
     text-align: center !important;
     font-weight: 800 !important;
@@ -177,6 +190,24 @@ body::-webkit-scrollbar {
     z-index: 130 !important;
     margin-right: 0 !important;
     margin-left: 3% !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-shadow: 1px 1px 5px rgb(0, 0, 0, 0.4) !important;
+  }
+
+
+  .titles6 {
+    text-align: center !important;
+    font-weight: 800 !important;
+    font-size: 40px !important;
+    letter-spacing: 2px !important;
+    color: white !important;
+    text-decoration: none !important;
+    z-index: 130 !important;
+    margin-right: 0 !important;
+
+    margin-top: 0 !important;
+    margin-left: 0% !important;
     justify-content: center !important;
     align-items: center !important;
     text-shadow: 1px 1px 5px rgb(0, 0, 0, 0.4) !important;
