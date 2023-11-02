@@ -60,22 +60,41 @@ const Header = () => {
               alignItems: 'center',
             }}
           >
-            <Typography
-              variant='h2'
-              style={{ textShadow: '2px 2px 10px rgb(0, 0, 0, 0.5)' }}
-              sx={{
-                fontFamily: 'Outfit',
-                fontSize: 85,
-                fontWeight: 'normal',
-                letterSpacing: '0px',
-                color: '#f5f5f5',
-                textDecoration: 'none',
-                mb: 3,
-                zIndex: '130',
-              }}
-            >
-              kaptn
-            </Typography>
+            <div style={{ display: 'flex', flexDirection: 'row' }}>
+              <Typography
+                variant='h2'
+                style={{ textShadow: '2px 2px 10px rgb(0, 0, 0, 0.5)' }}
+                sx={{
+                  fontFamily: 'Outfit',
+                  fontSize: 85,
+                  fontWeight: 'normal',
+                  letterSpacing: '0px',
+                  color: '#f5f5f5',
+                  textDecoration: 'none',
+                  mb: 3,
+                  zIndex: '130',
+                }}
+              >
+                kaptn
+              </Typography>
+              <div
+                style={{
+                  fontFamily: 'Outfit',
+                  fontSize: "70px",
+                  fontWeight: 'normal',
+                  letterSpacing: '0px',
+                  color: 'magenta',
+                  textDecoration: 'none',
+                  padding:"12px 0 0 0",
+                  margin: "0 0 0px 20px",
+                  zIndex: '130',
+                  textShadow: '2px 2px 10px rgb(0, 0, 0, 0.5)'
+                }}
+              >
+                v2.0
+              </div>
+            </div>
+
             <Typography
               variant='h4'
               align='center'

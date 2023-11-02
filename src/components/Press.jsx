@@ -44,11 +44,7 @@ const Press = () => {
             id='MediumArticle'
             component='img'
             src={MediumLogo}
-            onClick={() =>
-              window.open(
-                'https://medium.com/@kaptnapp/introducing-kaptn-8c4348c6dcf6'
-              )
-            }
+            onClick={() => window.open('https://medium.com/@kaptnapp/')}
             sx={{
               width: '45%',
               zIndex: '3410',
@@ -67,7 +63,7 @@ const Press = () => {
             }
             sx={{
               width: '45%',
-              
+
               zIndex: '3410',
               mb: '60px',
               // bgcolor:'red',
