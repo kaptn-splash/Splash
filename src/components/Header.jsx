@@ -91,7 +91,7 @@ const Header = () => {
                   textShadow: '2px 2px 10px rgb(0, 0, 0, 0.5)'
                 }}
               >
-                v2.0
+                v2.0.1
               </div>
             </div>
 

@@ -15,7 +15,7 @@ import linux from '../images/linux.png';
 import Tilt from 'react-parallax-tilt';
 import { browserName } from 'react-device-detect';
 import kraneJPG from '../images/krane.jpg'
-import krane from '../images/kraneGIF.gif'
+import krane from '../images/krangeGif2.gif'
 
 const Features = () => {
   let tilt = true;
@@ -399,7 +399,7 @@ const Features = () => {
                 textShadow: '1px 1px 5px rgb(0, 0, 0, 0.3)',
               }}
             >
-             View live metrics, scale, delete/restart and rollout resources like pods, nodes, and deployments in our intuitive, easy-to-use interface that harnesses the power of kubectl commands. 
+             View live metrics and historical graphs, scale, delete/restart, and rollout resources like pods, nodes, and deployments in our intuitive, easy-to-use interface that harnesses the power of kubectl commands. 
               <br />
               <br />
               Featuring custom speedometer-style gauges, filtering by namespace, sorting by CPU and memory percent, and much more, taking command of Kubernetes is now easier than ever!

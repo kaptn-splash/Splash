@@ -177,7 +177,7 @@ const Team = () => {
                 id='link'
                 component='img'
                 onClick={() => {
-                  window.open('https://www.github.com/jhwiwoc');
+                  window.open('https://github.com/jhwiwonc');
                 }}
                 style={styles.icons}
                 src={githubPng}
