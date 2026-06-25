@@ -25,7 +25,7 @@ function App() {
         id='tsparticles'
         init={particlesInit}
         loaded={particlesLoaded}
-        style={{ zIndex: '-150000', position: 'fixed' }}
+        style={{ zIndex: -1, position: 'fixed', pointerEvents: 'none' }}
         options={{
           background: {},
           fpsLimit: 120,
