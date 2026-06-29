@@ -8,6 +8,7 @@ import yining from '../images/yining.png';
 import olivia from '../images/olivia.png';
 import john from '../images/john.png';
 import brecht from '../images/brecht.png';
+import ScrollReveal from './ScrollReveal';
 
 const teamMembers = [
   { name: 'Brecht Horn', img: brecht, linkedin: 'https://www.linkedin.com/in/brecht-horn-a9b839213/', github: 'https://www.github.com/brecht-horn' },
@@ -56,6 +57,7 @@ const Team = () => {
         zIndex: 130,
       }}
     >
+      <ScrollReveal>
       <Typography
         variant="h2"
         textAlign="center"
@@ -71,6 +73,7 @@ const Team = () => {
       >
         Meet Our Engineering Team
       </Typography>
+      </ScrollReveal>
       <Box
         id="members"
         sx={{
@@ -81,8 +84,9 @@ const Team = () => {
           mb: 10,
         }}
       >
-        {teamMembers.map((member) => (
-          <Box key={member.name} sx={{ ...memberCard, width: { xs: '100%', sm: 340 } }}>
+        {teamMembers.map((member, index) => (
+          <ScrollReveal key={member.name} delay={index * 0.1}>
+          <Box sx={{ ...memberCard, width: { xs: '100%', sm: 340 } }}>
             <Box
               component="img"
               src={member.img}
@@ -135,6 +139,7 @@ const Team = () => {
               />
             </Box>
           </Box>
+          </ScrollReveal>
         ))}
       </Box>
     </Box>
