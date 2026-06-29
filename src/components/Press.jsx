@@ -2,6 +2,7 @@ import React from 'react';
 import { Typography } from '@mui/material';
 import Box from '@mui/material/Box';
 import productHuntLogo from '../images/productHuntLogo.png';
+import ScrollReveal from './ScrollReveal';
 
 const pressCard = {
   background: 'rgba(255, 255, 255, 0.06)',
@@ -37,6 +38,7 @@ const Press = () => {
         zIndex: 130,
       }}
     >
+      <ScrollReveal>
       <Typography
         variant="h2"
         textAlign="center"
@@ -52,6 +54,8 @@ const Press = () => {
       >
         Read Our Press
       </Typography>
+      </ScrollReveal>
+      <ScrollReveal delay={0.15}>
       <Box
         id="pressimages"
         sx={{
@@ -97,6 +101,7 @@ const Press = () => {
           </Typography>
         </Box>
       </Box>
+      </ScrollReveal>
     </Box>
   );
 };

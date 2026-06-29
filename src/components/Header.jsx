@@ -4,6 +4,7 @@ import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import logo from '../images/kaptn_Logo_2.png';
+import ScrollReveal from './ScrollReveal';
 
 const Header = () => {
   return (
@@ -20,18 +21,19 @@ const Header = () => {
         textAlign: 'center',
       }}
     >
-      <Box
-        sx={{
-          perspective: '800px',
-          mb: 3,
-          position: 'relative',
-          zIndex: 1300,
-        }}
-      >
+      <ScrollReveal direction="none" duration={1}>
         <Box
-          component="img"
-          src={logo}
-          alt="Kaptn logo"
+          sx={{
+            perspective: '800px',
+            mb: 3,
+            position: 'relative',
+            zIndex: 1300,
+          }}
+        >
+          <Box
+            component="img"
+            src={logo}
+            alt="Kaptn logo"
           sx={{
             height: { xs: 260, md: 350 },
             width: { xs: 260, md: 350 },
@@ -55,14 +57,16 @@ const Header = () => {
               '100%':  { transform: 'rotateY(0deg) rotate(0deg)' },
             },
           }}
-        />
-      </Box>
+          />
+        </Box>
+      </ScrollReveal>
 
-      <Box
-        sx={{
-          display: 'flex',
-          flexDirection: 'row',
-          alignItems: 'baseline',
+      <ScrollReveal delay={0.2}>
+        <Box
+          sx={{
+            display: 'flex',
+            flexDirection: 'row',
+            alignItems: 'baseline',
           gap: 2,
           zIndex: 1300,
           position: 'relative',
@@ -95,7 +99,9 @@ const Header = () => {
           v2.0.1
         </Box>
       </Box>
+      </ScrollReveal>
 
+      <ScrollReveal delay={0.4}>
       <Typography
         variant="h5"
         sx={{
@@ -113,7 +119,9 @@ const Header = () => {
         Unlock the full power of Kubernetes — easily initialize,
         monitor, and manage your clusters with an intuitive desktop interface.
       </Typography>
+      </ScrollReveal>
 
+      <ScrollReveal delay={0.6}>
       <Box
         id="download"
         sx={{
@@ -177,6 +185,7 @@ const Header = () => {
           View on GitHub
         </Button>
       </Box>
+      </ScrollReveal>
     </Box>
   );
 };

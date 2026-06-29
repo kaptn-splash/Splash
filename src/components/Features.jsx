@@ -11,6 +11,7 @@ import microsoft from '../images/microsoft.png';
 import linux from '../images/linux.png';
 import krane from '../images/krangeGif2.gif';
 import VanillaTilt from 'vanilla-tilt';
+import ScrollReveal from './ScrollReveal';
 
 const TiltImage = ({ src, alt }) => {
   const tiltRef = useRef(null);
@@ -60,6 +61,7 @@ const TiltImage = ({ src, alt }) => {
 };
 
 const FeatureSection = ({ id, title, description, image, reverse }) => (
+  <ScrollReveal>
   <Box
     id={id}
     sx={{
@@ -120,6 +122,7 @@ const FeatureSection = ({ id, title, description, image, reverse }) => (
     </Box>
     {image}
   </Box>
+  </ScrollReveal>
 );
 
 const Features = () => {

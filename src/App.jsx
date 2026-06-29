@@ -28,7 +28,7 @@ function App() {
         style={{ zIndex: -1, position: 'fixed', pointerEvents: 'none' }}
         options={{
           background: {},
-          fpsLimit: 120,
+          fpsLimit: 30,
           interactivity: {
             events: {
               onClick: {
