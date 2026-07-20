@@ -85,7 +85,8 @@ const Team = () => {
         }}
       >
         {teamMembers.map((member, index) => (
-          <ScrollReveal key={member.name} delay={index * 0.1}>
+          <Box key={member.name} sx={{ width: { xs: '100%', sm: 'auto' } }}>
+          <ScrollReveal delay={index * 0.1}>
           <Box sx={{ ...memberCard, width: { xs: '100%', sm: 340 } }}>
             <Box
               component="img"
@@ -140,6 +141,7 @@ const Team = () => {
             </Box>
           </Box>
           </ScrollReveal>
+          </Box>
         ))}
       </Box>
     </Box>
