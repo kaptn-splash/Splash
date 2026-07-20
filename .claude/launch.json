@@ -6,6 +6,18 @@
       "runtimeExecutable": "npm",
       "runtimeArgs": ["start"],
       "port": 3000
+    },
+    {
+      "name": "headshots",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["--prefix", "/Users/davidbrechthornjr/Desktop/CODE/h-ai-dshot-generator", "run", "dev"],
+      "port": 3000
+    },
+    {
+      "name": "styletile",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-m", "http.server", "4173", "--directory", "/private/tmp/claude-501/-Users-davidbrechthornjr-Desktop-CODE-Splash/9c90d1da-42a4-497b-8628-4359c54081e1/scratchpad"],
+      "port": 4173
     }
   ]
 }
