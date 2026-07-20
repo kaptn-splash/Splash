@@ -85,7 +85,7 @@ const Team = () => {
         }}
       >
         {teamMembers.map((member, index) => (
-          <Box key={member.name} sx={{ width: { xs: '100%', sm: 'auto' } }}>
+          <Box key={member.name} sx={{ width: { xs: '100%', sm: 'auto' }, display: 'flex', justifyContent: 'center' }}>
           <ScrollReveal delay={index * 0.1}>
           <Box sx={{ ...memberCard, width: { xs: '100%', sm: 340 } }}>
             <Box
