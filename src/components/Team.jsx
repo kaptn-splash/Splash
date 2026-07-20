@@ -19,6 +19,7 @@ const teamMembers = [
 ];
 
 const memberCard = {
+  boxSizing: 'border-box',
   background: 'rgba(255, 255, 255, 0.06)',
   backdropFilter: 'blur(12px)',
   WebkitBackdropFilter: 'blur(12px)',
@@ -85,9 +86,8 @@ const Team = () => {
         }}
       >
         {teamMembers.map((member, index) => (
-          <Box key={member.name} sx={{ width: { xs: '100%', sm: 'auto' }, display: 'flex', justifyContent: 'center' }}>
-          <ScrollReveal delay={index * 0.1}>
-          <Box sx={{ ...memberCard, width: { xs: '100%', sm: 340 } }}>
+          <ScrollReveal key={member.name} delay={index * 0.1} style={{ width: '100%', maxWidth: 340, margin: '0 auto' }}>
+          <Box sx={{ ...memberCard, width: '100%' }}>
             <Box
               component="img"
               src={member.img}
@@ -141,7 +141,6 @@ const Team = () => {
             </Box>
           </Box>
           </ScrollReveal>
-          </Box>
         ))}
       </Box>
     </Box>
