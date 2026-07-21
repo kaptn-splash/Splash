@@ -1,6 +1,15 @@
 html {
   padding-top: 60px;
-  background-color: #f978f2;
+  background-size: 300% 300%;
+  background-image: linear-gradient(
+    -45deg,
+    #ed35fe 0%,
+    #a617ff 25%,
+    #6e4cf7 51%,
+    #f978f2 100%
+  );
+  -webkit-animation: AnimateBG 10s ease infinite;
+  animation: AnimateBG 10s ease infinite;
 }
 
 body {
@@ -16,16 +25,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-size: 300% 300%;
-  background-image: linear-gradient(
-    -45deg,
-    #ed35fe 0%,
-    #a617ff 25%,
-    #6e4cf7 51%,
-    #f978f2 100%
-  );
-  -webkit-animation: AnimateBG 10s ease infinite;
-  animation: AnimateBG 10s ease infinite;
+  background: transparent;
 }
 
 @-webkit-keyframes AnimateBG {
