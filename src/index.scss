@@ -1,81 +1,28 @@
 html {
-  padding-top: 60px;
-  background-color: #7a52c9;
-  background-size: 300% 300%;
-  background-image: linear-gradient(
-    -45deg,
-    #ed35fe 0%,
-    #a617ff 25%,
-    #6e4cf7 51%,
-    #f978f2 100%
-  );
-  -webkit-animation: AnimateBG 10s ease infinite;
-  animation: AnimateBG 10s ease infinite;
+  background-color: #171341;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   overflow-x: hidden;
-  overflow-y: auto;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: transparent;
-}
-
-@-webkit-keyframes AnimateBG {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-@keyframes AnimateBG {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+  background-color: transparent;
+  color: #f5f3fa;
+  font-family: 'Outfit', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body::-webkit-scrollbar {
   display: none;
 }
 
-#link:hover {
-  cursor: pointer;
-}
-
-#buttons:hover {
-  cursor: pointer;
-}
-
-#buttonsDL:hover {
-  cursor: pointer;
-}
-
-#buttonsDL2:hover {
-  cursor: pointer;
-}
-
 .App {
-  height: 100%;
   max-width: 100vw;
-  overflow-x: hidden;
+  overflow-x: clip;
 }
-
