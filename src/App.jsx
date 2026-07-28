@@ -1,100 +1,66 @@
-import Features from './components/Features';
-import Header from './components/Header';
-import Navbar from './components/Navbar';
-import Team from './components/Team';
-import Press from './components/Press';
-import Particles from 'react-particles';
-import { useCallback } from 'react';
-import { loadFull } from 'tsparticles';
+import React from 'react';
+import Nav from './components/v3/Nav';
+import Hero from './components/v3/Hero';
+import IntroStatement from './components/v3/IntroStatement';
+import LetterReveal from './components/v3/LetterReveal';
+import ScrollFeatures from './components/v3/ScrollFeatures';
+import Showcase from './components/v3/Showcase';
+import PressV3 from './components/v3/PressV3';
+import TeamV3 from './components/v3/TeamV3';
+import FooterV3 from './components/v3/FooterV3';
+import './components/v3/v3.scss';
 
 function App() {
-  const particlesInit = useCallback(async (engine) => {
-    await loadFull(engine);
-  }, []);
-
-  const particlesLoaded = useCallback(async (container) => {}, []);
-
   return (
-    <div className='App' >
-      <Navbar sx={{ zIndex: '99999' }} />
-      <Header style={{ zIndex: '1201' }} />
-      <Features style={{ zIndex: '1200' }} />
-      <Press style={{ zIndex: '12602' }} />
-      <Team style={{ zIndex: '1401' }} />
-      <Particles
-        id='tsparticles'
-        init={particlesInit}
-        loaded={particlesLoaded}
-        style={{ zIndex: -1, position: 'fixed', pointerEvents: 'none' }}
-        options={{
-          background: {},
-          fpsLimit: 30,
-          interactivity: {
-            events: {
-              onClick: {
-                enable: true,
-                mode: 'push',
-              },
-              onHover: {
-                enable: true,
-                mode: 'repulse',
-              },
-              resize: true,
-            },
-            modes: {
-              push: {
-                quantity: 4,
-              },
-              repulse: {
-                distance: 170,
-                duration: 0.4,
-              },
-            },
-          },
-          particles: {
-            color: {
-              value: '#ed35fe',
-            },
-            links: {
-              color: '#ffffff',
-              distance: 150,
-              enable: true,
-              opacity: 0.5,
-              width: 1,
-            },
-            collisions: {
-              enable: false,
-            },
-            move: {
-              directions: 'none',
-              enable: true,
-              outModes: {
-                default: 'bounce',
-              },
-              random: false,
-              speed: 2,
-              straight: false,
-            },
-            number: {
-              density: {
-                enable: true,
-                area: 800,
-              },
-              value: 80,
-            },
-            opacity: {
-              value: 0.5,
-            },
-            shape: {
-              type: 'circle',
-            },
-            size: {
-              value: { min: 1, max: 5 },
-            },
-          },
-          detectRetina: true,
-        }}
-      />
+    <div className="App v3">
+      <div className="v3-bg" />
+      <div className="v3-blobs" aria-hidden="true">
+        <div className="v3-blob v3-blob--indigo" style={{ top: '1%', left: '-8%' }} />
+        <div className="v3-blob v3-blob--violet" style={{ top: '5%', right: '-6%' }} />
+        <div className="v3-blob v3-blob--navy" style={{ top: '18%', left: '-6%' }} />
+        <div className="v3-blob v3-blob--magenta" style={{ top: '30%', right: '-4%' }} />
+        <div className="v3-blob v3-blob--violet" style={{ top: '44%', left: '20%' }} />
+        <div className="v3-blob v3-blob--navy" style={{ top: '58%', right: '-6%' }} />
+        <div className="v3-blob v3-blob--pink" style={{ top: '72%', left: '-4%' }} />
+        <div className="v3-blob v3-blob--indigo" style={{ top: '88%', right: '-6%' }} />
+      </div>
+      <div className="v3-grain" />
+      <Nav />
+      <main>
+        <Hero />
+        <div className="v3-glow-divider" />
+        <IntroStatement />
+        <LetterReveal text="Your always-on bridge to every cluster — setup, control, and monitoring in one place." />
+        <ScrollFeatures />
+        <div className="v3-glow-divider" />
+        <Showcase />
+        <PressV3 />
+        <div className="v3-glow-divider" />
+        <TeamV3 />
+        <div className="v3-glow-divider" />
+        <div className="v3-cta-final">
+          <LetterReveal text="Take command." />
+          <div className="v3-hero-ctas">
+            <a
+              className="v3-btn v3-btn-primary"
+              href="https://github.com/oslabs-beta/kaptn/releases"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Download Now
+            </a>
+            <a
+              className="v3-btn v3-btn-ghost"
+              href="https://github.com/oslabs-beta/kaptn"
+              target="_blank"
+              rel="noreferrer"
+            >
+              View on GitHub
+            </a>
+          </div>
+        </div>
+      </main>
+      <FooterV3 />
     </div>
   );
 }
