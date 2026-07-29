@@ -1,10 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import brecht from '../../images/brecht.png';
-import john from '../../images/john.png';
-import natalie from '../../images/natalie.png';
-import olivia from '../../images/olivia.png';
-import yining from '../../images/yining.png';
+import brecht from '../../images/v3/team/brecht.jpg';
+import john from '../../images/v3/team/john.jpg';
+import natalie from '../../images/v3/team/natalie.jpg';
+import olivia from '../../images/v3/team/olivia.jpg';
+import yining from '../../images/v3/team/yining.jpg';
 
 const teamMembers = [
   {
@@ -73,7 +73,7 @@ const TeamV3 = () => (
           transition={{ duration: 0.6, delay: i * 0.08, ease: [0.25, 0.1, 0.25, 1] }}
         >
           <div className="v3-team-photo-ring">
-            <img src={member.img} alt={member.name} />
+            <img src={member.img} alt={member.name} loading="lazy" decoding="async" />
           </div>
           <p className="v3-team-name">{member.name}</p>
           <p className="v3-team-role">Software Engineer</p>

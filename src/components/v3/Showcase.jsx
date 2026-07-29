@@ -48,6 +48,8 @@ const Showcase = () => {
             key={s.alt}
             src={s.src}
             alt={s.alt}
+            loading="lazy"
+            decoding="async"
             onClick={() => handleOpen(i)}
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
