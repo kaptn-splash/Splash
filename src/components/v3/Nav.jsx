@@ -121,10 +121,10 @@ const Nav = () => {
         {menuOpen && (
           <motion.div
             className="v3-nav-overlay"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.25 }}
+            initial={{ y: '-100%' }}
+            animate={{ y: 0 }}
+            exit={{ y: '-100%' }}
+            transition={{ duration: 0.45, ease: [0.32, 0.72, 0, 1] }}
           >
             <button
               className="v3-nav-close"

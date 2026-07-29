@@ -95,6 +95,7 @@ const Hero = () => (
               className="v3-tablet-screen"
               src={startPage}
               alt="Kaptn v3 start page"
+              fetchpriority="high"
             />
             <div className="v3-tablet-glare" />
           </div>

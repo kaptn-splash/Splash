@@ -58,13 +58,35 @@ const ScrollFeatures = () => {
     return () => clearTimeout(t);
   }, [active]);
 
-  // the later GIFs are large — fetch them early so they're cached
-  // by the time the user scrolls to steps 5 and 6
+  // warm the GIF cache for steps 5/6: start downloading at the earliest of
+  // (a) the page finishing its critical load or (b) the user's first
+  // scroll/touch — never competing with first paint, but always several
+  // screens ahead of the features section
   useEffect(() => {
-    [helpdesk, lightmode].forEach((src) => {
-      const img = new Image();
-      img.src = src;
-    });
+    let warmed = false;
+    const warm = () => {
+      if (warmed) return;
+      warmed = true;
+      [helpdesk, lightmode].forEach((src) => {
+        const img = new Image();
+        img.src = src;
+      });
+      window.removeEventListener('load', warm);
+      window.removeEventListener('scroll', warm);
+      window.removeEventListener('touchstart', warm);
+    };
+    if (document.readyState === 'complete') {
+      warm();
+      return undefined;
+    }
+    window.addEventListener('load', warm, { once: true });
+    window.addEventListener('scroll', warm, { passive: true, once: true });
+    window.addEventListener('touchstart', warm, { passive: true, once: true });
+    return () => {
+      window.removeEventListener('load', warm);
+      window.removeEventListener('scroll', warm);
+      window.removeEventListener('touchstart', warm);
+    };
   }, []);
 
   // drive the active image straight from scroll position: the step whose
@@ -113,7 +135,13 @@ const ScrollFeatures = () => {
               </span>
               <h3>{f.title}</h3>
               <p>{f.body}</p>
-              <img className="v3-feature-inline-img" src={f.img} alt={f.title} />
+              <img
+                className="v3-feature-inline-img"
+                src={f.img}
+                alt={f.title}
+                loading="lazy"
+                decoding="async"
+              />
             </motion.div>
           ))}
         </div>
@@ -130,6 +158,8 @@ const ScrollFeatures = () => {
                     className="v3-iso-img v3-iso-layer"
                     src={f.img}
                     alt={f.title}
+                    loading="lazy"
+                    decoding="async"
                     initial={false}
                     animate={{
                       opacity: displayed === i ? 1 : 0,

@@ -10,9 +10,9 @@
     {
       "name": "headshots",
       "runtimeExecutable": "npm",
-      "runtimeArgs": ["--prefix", "/Users/davidbrechthornjr/Desktop/CODE/h-ai-dshot-generator", "run", "dev"],
-      "port": 3000,
-      "autoPort": true
+      "runtimeArgs": ["--prefix", "/Users/davidbrechthornjr/Desktop/CODE/h-ai-dshot-generator", "run", "dev", "--", "-p", "3100"],
+      "port": 3100,
+      "autoPort": false
     },
     {
       "name": "styletile",
